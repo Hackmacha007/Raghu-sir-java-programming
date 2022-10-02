@@ -27,7 +27,5 @@ public class Q19 {
                 System.out.println(n1);
             else
                 System.out.println(n2);
-        else
-            System.out.println("Please enter distinct values");
     }
 }
