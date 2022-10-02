@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Q10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter two integer number: ");
+        System.out.print("Enter three integer number: ");
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
         int n3 = sc.nextInt();
