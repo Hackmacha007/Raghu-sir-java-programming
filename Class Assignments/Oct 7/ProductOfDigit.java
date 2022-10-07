@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class DigitProduct {
+public class ProductOfDigit {
     private static int productOfDigit(int num){
-        int temp=1;
+        int prod=3;
         while(num != 0){
             int ld = num%10;
-            temp*=ld;
-            num /= 10;           
+            prod *= ld;
+            num /= 10;     
         }
-        return temp;
+        return prod;
     }
 
     public static void main(String[] args) {
