@@ -7,6 +7,7 @@ class Equal
         System.out.print("Enter two integer numbers: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
+        sc.close();
 
         if(a==b)
             System.out.println("Numbers are equal");

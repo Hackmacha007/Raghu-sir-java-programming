@@ -6,6 +6,7 @@ class MonthValidOrNot {
         System.out.println("Enter month number: ");
 
         int m = sc.nextInt();
+        sc.close();
 
         if(m>=1 && m<=12)
             System.out.println("Month number " +m+ " is valid." );

@@ -5,6 +5,7 @@ public class Denomination {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount: ");
         int amount = sc.nextInt();
+        sc.close();
 
         int notes = amount/2000;
         amount = amount%2000;

@@ -9,6 +9,7 @@ public class BiggestAmongFourDouble {
         double b = sc.nextDouble();
         double c = sc.nextDouble();
         double d = sc.nextDouble();
+        sc.close();
 
         double big = a;
         if(b > big)

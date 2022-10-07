@@ -6,6 +6,7 @@ class PositiveOrNot
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int a = sc.nextInt();
+        sc.close();
 
         if(a<0)
             System.out.println(a + " is negative");

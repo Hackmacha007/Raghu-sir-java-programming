@@ -8,6 +8,7 @@ class BiggestAmongThree
         double a = sc.nextDouble();
         double b = sc.nextDouble();
         double c = sc.nextDouble();
+        sc.close();
 
         double big = a;
         

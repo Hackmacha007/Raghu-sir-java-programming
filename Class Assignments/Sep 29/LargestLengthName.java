@@ -8,6 +8,7 @@ class LargestLengthName
 
         String n1 = sc.next();
         String n2 = sc.next();
+        sc.close();
 
         if(n1.length() > n2.length())
             System.out.println(n1 + " name has the highest length");

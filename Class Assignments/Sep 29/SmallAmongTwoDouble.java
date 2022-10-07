@@ -7,6 +7,7 @@ class SmallAmongTwoDouble
         System.out.print("Enter two numbers: ");
         double a = sc.nextDouble();
         double b = sc.nextDouble();
+        sc.close();
 
         if(a<=b)
             System.out.println(a + " is the smallest number");

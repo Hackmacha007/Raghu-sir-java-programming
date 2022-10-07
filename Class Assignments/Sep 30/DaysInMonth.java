@@ -6,6 +6,8 @@ public class DaysInMonth{
         System.out.println("Enter month number: ");
 
         int m = sc.nextInt();
+        sc.close();
+        
         switch(m)
         {
             case 1:

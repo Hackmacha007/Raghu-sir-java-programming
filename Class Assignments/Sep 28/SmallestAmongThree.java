@@ -8,6 +8,7 @@ class SmallestAmongThree
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
+        sc.close();
 
         int small = a;
         

@@ -6,6 +6,7 @@ public class SimpleInterest {
         double p = sc.nextDouble();
         double r = sc.nextDouble();
         double t = sc.nextDouble();
+        sc.close();
         System.out.println("Simple interest is: " + (p*r*t)/100);
     }
 }

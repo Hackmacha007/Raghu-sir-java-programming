@@ -7,6 +7,7 @@ class BiggestAmongTwo
         System.out.print("Enter any two numbers: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
+        sc.close();
 
         if(a>=b)
             System.out.println(a + " is biggest number");

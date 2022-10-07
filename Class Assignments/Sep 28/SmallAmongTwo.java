@@ -7,6 +7,7 @@ class SmallAmongTwo
         System.out.print("Enter two integer numbers: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
+        sc.close();
 
         int small = a;
         if(b<small)

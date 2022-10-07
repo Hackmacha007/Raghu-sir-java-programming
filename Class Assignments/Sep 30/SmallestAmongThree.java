@@ -8,6 +8,7 @@ class SmallAmongThree {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
+        sc.close();
 
         if(a<b && a<c)
             System.out.println(a + " is the smallest number");
