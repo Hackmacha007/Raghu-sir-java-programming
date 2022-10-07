@@ -10,7 +10,7 @@ public class Result {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the subjext marks: ");
+        System.out.println("Enter the subject marks: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();

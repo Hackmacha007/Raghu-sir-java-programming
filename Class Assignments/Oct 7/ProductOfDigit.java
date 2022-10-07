@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ProductOfDigit {
     private static int productOfDigit(int num){
-        int prod=3;
+        int prod=1;
         while(num != 0){
             int ld = num%10;
             prod *= ld;
