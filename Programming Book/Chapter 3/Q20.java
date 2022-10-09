@@ -6,7 +6,7 @@ public class Q20 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
-
+        sc.close();
 
         int a=0; //first number of series
         int b=1; //second number of series
