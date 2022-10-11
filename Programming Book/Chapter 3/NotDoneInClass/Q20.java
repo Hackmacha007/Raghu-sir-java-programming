@@ -1,3 +1,4 @@
+package NotDoneInClass;
 import java.util.Scanner;
 
 public class Q20 {
