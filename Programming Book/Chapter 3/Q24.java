@@ -20,17 +20,17 @@ public class Q24 {
         return pw;
     }
 
-    private static boolean isArmstrong(int num) {
-        int sum=0, temp=num;
-        int dc=digitCount(num);
+    private static boolean isArmstrong(int n) {
+        int sum=0, temp = n;
+        int dc = digitCount(n);
 
         do {
-            int r = num%10;
-            sum = sum + pow(r, dc);
-            num /= 10;
-        } while(num!=10);
+            int r = n % 10;
+            sum += pow(r, dc);
+            n /= 10;
+        }while(n!=0);
 
-        return temp == sum;        
+        return temp == sum;     
     }
 
     public static void main(String[] args) {
@@ -39,9 +39,10 @@ public class Q24 {
         int n = sc.nextInt();
         sc.close();
 
-        if(isArmstrong(n))
+        if(isArmstrong(n)) {
             System.out.println("Armstrong number");
-        else
+        } else {
             System.out.println("Not an Armstrong number");
+        }
     }
 }
