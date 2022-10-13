@@ -1,5 +1,3 @@
-package NotDoneInClass;
-
 import java.util.Scanner;
 public class Q55 {
     private static double percentage(int m1, int m2, int m3, int m4) {

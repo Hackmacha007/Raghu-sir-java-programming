@@ -1,5 +1,3 @@
-package NotDoneInClass;
-
 import java.util.Scanner;
 public class Q54 {
     private static int discount(int price, int percent) {
