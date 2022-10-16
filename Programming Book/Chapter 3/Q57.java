@@ -12,7 +12,7 @@ public class Q57 {
 
         //working of predecrement and postdecrement
         System.out.print("\n\na = " + decA);
-        System.out.print("\t\ta-- = " + decA++);
+        System.out.print("\t\ta-- = " + decA--);
 
         System.out.print("\nb = " + decB);
         System.out.print("\t\t--b = " + --decB);
