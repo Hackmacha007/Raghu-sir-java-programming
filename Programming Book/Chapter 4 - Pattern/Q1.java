@@ -24,23 +24,5 @@ public class Q1 {
             }
             System.out.println();
         }
-
-        // for(int i=1; i<=n*2; i++) {
-        //     if(i%2==0) {
-        //         continue;
-        //     }
-
-        //     for(int k=(n-1)*2; k>=i; k--) {
-        //         if(k%2==0) {
-        //             continue;
-        //         }
-        //         System.out.print(" ");
-        //     }
-
-        //     for(int j=1; j<=i; j++) {
-        //         System.out.print(j%2);
-        //     }
-        //     System.out.println();
-        // }
     }
 }
