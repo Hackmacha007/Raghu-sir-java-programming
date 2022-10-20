@@ -1,9 +1,9 @@
 /*
 Print this pattern:
-        1               i=1      j=1 j<=i    j%2 -> 1 / i%2 -> 1
-      0 1 0               2    
-    1 0 1 0 1             3
-  0 1 0 1 0 1 0           4
+        1
+      0 1 0      
+    1 0 1 0 1 
+  0 1 0 1 0 1 0
 1 0 1 0 1 0 1 0 1              */
 
 import java.util.Scanner;
@@ -13,6 +13,19 @@ public class Q20 {
         System.out.print("Enter the value of lines: ");
         int n = sc.nextInt();
         sc.close();
+
+        int x=1;
+        for(int i=1; i<=n; i++) {
+          for(int j=1; j<=n-i; j++) {
+            System.out.print("  ");
+          }
+          for(int j=1; j<=i*2-1; j++) {
+            System.out.print(x%2+" ");
+            x++;
+          }
+
+          System.out.println();
+        }
 
        
     } 
