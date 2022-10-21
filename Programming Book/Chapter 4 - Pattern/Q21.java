@@ -13,12 +13,11 @@ public class Q21 {
         System.out.print("Enter the number of lines: ");
         int n = sc.nextInt();
         sc.close();
-
-        //for lines
+        int x=1;
         for(int i=1; i<=n; i++) {
-            //for numbers
-            for(int k=1; k<=i; k++) {
-                System.out.print(k+" ");
+            for(int j=1; j<=i; j++) {
+                System.out.print(x%2+" ");
+                x++;
             }
             System.out.println();
         }
