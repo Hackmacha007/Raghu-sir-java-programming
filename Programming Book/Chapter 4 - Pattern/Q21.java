@@ -1,12 +1,11 @@
 /*
 Print the following pattern
 1
-01
-010
-1010
-10101
-*/
-
+0 1
+0 1 0
+1 0 1 0
+1 0 1 0 1                   */
+ 
 import java.util.Scanner;
 public class Q21 {
     public static void main(String[] args) {

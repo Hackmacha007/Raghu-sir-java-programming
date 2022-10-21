@@ -1,11 +1,10 @@
 /*
 Print the following pattern
-54321
-54321
-54321
-54321
-54321   
-*/
+5 4 3 2 1
+5 4 3 2 1
+5 4 3 2 1
+5 4 3 2 1
+5 4 3 2 1                */
 
 import java.util.Scanner;
 public class Q15 {

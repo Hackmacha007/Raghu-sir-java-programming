@@ -4,8 +4,7 @@ Print the following pattern
  2 3 4 5
   3 4 5
    4 5
-    5
-*/
+    5                              */
 
 import java.util.Scanner;
 public class Q11 {
@@ -15,14 +14,11 @@ public class Q11 {
         int n = sc.nextInt();
         sc.close();
 
-        //for lines
         for(int i=1; i<=n; i++) {
-            //for spaces
             for(int j=1; j<=i-1; j++) {
                 System.out.print(" ");
             }
 
-            //for numbers
             for(int k=i; k<=n; k++) {
                 System.out.print(k+" ");
             }

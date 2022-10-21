@@ -1,11 +1,10 @@
 /*
 Print the following pattern
-    1
-   101
-  10101
- 1010101
-101010101
-*/
+        1
+      1 0 1
+    1 0 1 0 1
+  1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0 1          */
 
 import java.util.Scanner;
 public class Q1 {

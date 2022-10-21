@@ -1,11 +1,10 @@
 /*
 Print the following pattern
-    1
-   21
-  321
- 4321
-54321
-*/
+        1
+      2 1
+    3 2 1
+  4 3 2 1
+5 4 3 2 1           */
 
 import java.util.Scanner;
 public class Q4 {
@@ -15,14 +14,11 @@ public class Q4 {
         int n = sc.nextInt();
         sc.close();
 
-        //for lines
         for(int i=1; i<=n; i++) {
-            //for spaces
             for(int j=1; j<=n-i; j++) {
                 System.out.print(" ");
             }
-
-            //for numbers
+            
             for(int k=i; k>=1; k--) {
                 System.out.print(k);
             }

@@ -1,13 +1,13 @@
 /*
 Print the following pattern
-        1
-      1 * 2
-    1 * 2 * 3
-  1 * 2 * 3 * 4
-1 * 2 * 3 * 4 * 5           */
+        a
+      b a b
+    c b a b c
+  d c b a b c d 
+e d c b a b c d e              */
 
 import java.util.Scanner;
-public class Q3 {
+public class Q14 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of lines: ");
@@ -16,13 +16,18 @@ public class Q3 {
 
         for(int i=1; i<=n; i++) {
             for(int j=1; j<=n-i; j++) {
-                System.out.print(" ");
+                System.out.print("  ");
             }
-            for(int k=1; k<=i; k++) {
-                System.out.print(k);
-                if(k<i) {
-                    System.out.print("*");
-                }  
+
+            int x=i;
+            for(int j=1; j<=i*2-1; j++) {
+                System.out.print((char)(x+96)+" ");
+                if(j<i) {
+                    x--;
+                }
+                else {
+                    x++;
+                }    
             }
             System.out.println();
         }

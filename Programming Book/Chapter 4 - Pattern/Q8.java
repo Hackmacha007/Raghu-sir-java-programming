@@ -1,11 +1,10 @@
 /*
 Print the following pattern
-    1
-   010
-  10101
- 0101010
-101010101
-*/
+        1
+      0 1 0
+    1 0 1 0 1
+  0 1 0 1 0 1 0
+1 0 1 0 1 0 1 0 1       */
 
 import java.util.Scanner;
 public class Q8 {
@@ -15,14 +14,12 @@ public class Q8 {
         int n = sc.nextInt();
         sc.close();
 
-        //for lines
         int x=1;
         for(int i=1; i<=n; i++) {
-            //for spaces
             for(int j=1; j<=n-i; j++) {
                 System.out.print(" ");
             }
-            //for numbers
+
             for(int k=1; k<=i*2-1; k++) {
                 System.out.print(x%2);
                 x++;

@@ -1,12 +1,10 @@
-package NotDone;
 /*
-Print the following pattern -> Same as question 17
+Print the following pattern
 1
-2 6
+2 6 
 3 7 10
 4 8 11 13
-5 9 12 14 15
-*/
+5 9 12 14 15                  */
 
 import java.util.Scanner;
 public class Q20 {
@@ -17,12 +15,10 @@ public class Q20 {
         sc.close();
 
         for(int i=1; i<=n; i++) {
-            for(int k=1; k<=n*3; k++) {
-                System.out.print(k);
-            }
-
-            for(int j=1; j<=n-i; j++) {
-                System.out.print(" ");
+            int x=i;
+            for(int j=1; j<=i; j++) {
+                System.out.print(x+" ");
+                x=x+n-j;
             }
             System.out.println();
         }
