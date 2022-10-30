@@ -1,13 +1,13 @@
 /*
 Print the following pattern n=5
-1               1
-1 2           2 1
-1 2 3       3 2 1
-1 2 3 4   4 3 2 1 
-1 2 3 4 5 4 3 2 1                    */
+1       1
+12     21
+123   321
+1234 4321 
+123454321                    */
 
 import java.util.Scanner;
-public class Q39 {
+public class Q40 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of lines: ");
@@ -15,7 +15,6 @@ public class Q39 {
         sc.close();
 
         for(int i=1; i<=n; i++) {
-            
             for(int j=1; j<=i; j++) {
                 System.out.print(j);
             }
@@ -30,7 +29,6 @@ public class Q39 {
                 }
                 System.out.print(j);
             }
-
             System.out.println();
         }
     }
