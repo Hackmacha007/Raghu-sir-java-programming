@@ -1,22 +1,25 @@
 /*
-Print the following pattern n=3
-1 2 3 2 1
-1 2   2 1
-1       1                      */
+Print the following pattern n=5
+1               1
+1 2           2 1
+1 2 3       3 2 1
+1 2 3 4   4 3 2 1 
+1 2 3 4 5 4 3 2 1                    */
 
 import java.util.Scanner;
-public class Q6 {
+public class Q39 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of lines: ");
         int n = sc.nextInt();
         sc.close();
 
-        for(int i=n; i>=1; i--) {           
+        for(int i=1; i<=n; i++) {
+            
             for(int j=1; j<=i; j++) {
                 System.out.print(j);
             }
-
+        
             for(int j=1; j<=2*(n-i)-1; j++) {
                 System.out.print(" ");
             }
@@ -27,6 +30,7 @@ public class Q6 {
                 }
                 System.out.print(j);
             }
+
             System.out.println();
         }
     }
