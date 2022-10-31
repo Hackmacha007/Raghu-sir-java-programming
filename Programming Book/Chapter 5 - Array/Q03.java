@@ -1,7 +1,7 @@
 //Q3. Write a java program to define a method to return smallest element from the array.
 
 import java.util.Scanner;
-public class Q3 {
+public class Q03 {
     private static int smallest(int[] arr) {
         int small=arr[0];
 

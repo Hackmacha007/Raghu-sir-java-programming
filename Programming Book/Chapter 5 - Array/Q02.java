@@ -1,7 +1,7 @@
 //Q2. Write a java program to read n integers and print sum of all those elements.
 
 import java.util.Scanner;
-public class Q2 {
+public class Q02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array: ");

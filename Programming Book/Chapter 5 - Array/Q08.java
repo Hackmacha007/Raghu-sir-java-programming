@@ -1,20 +1,18 @@
-//Q6. Write a java program to define a method to return how many prime numbers present in array.
+//Q8. Write a java program to define a method to return how many odd numbers present in array.
 
 import java.util.Scanner;
-public class Q6 {
-    private static boolean isPrime(int n) {
-        for(int i=2; i<n/2; i++) {
-            if(n%i==0) {
-                return false;
-            }
+public class Q08 {
+    private static boolean isOdd(int n) {
+        if(n%2!=0) {
+            return true;
         }
-        return true;
+        return false;
     }
 
-    private static int primeCount(int[] arr) {
+    private static int oddCount(int[] arr) {
        int count=0;
        for(int i=0; i<arr.length; i++) {
-            if(isPrime(arr[i])) {
+            if(isOdd(arr[i])) {
                 count++;
             }
         }
@@ -35,6 +33,6 @@ public class Q6 {
     }
 
     public static void main(String[] args) {
-        System.out.println("The count of prime numbers are: "+ primeCount(readArray()));
+        System.out.println("The count of odd numbers are: "+ oddCount(readArray()));
     }
 }

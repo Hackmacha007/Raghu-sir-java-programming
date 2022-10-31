@@ -1,6 +1,6 @@
 //Q1. Initialize 5 students percentage and display the highest percentage
 
-public class Q1 {
+public class Q01 {
     public static void main(String[] args) {
         double[] per = {78.05, 65.87, 45.67, 76.43, 98.08};
         double big = per[0];

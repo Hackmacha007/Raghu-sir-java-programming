@@ -1,18 +1,25 @@
-//Q7. Write a java program to define a method to return how many even numbers present in array.
+//Q9. Write a java program to define a method to return how many prime numbers present in array within 100.
 
 import java.util.Scanner;
-public class Q7 {
-    private static boolean isEven(int n) {
-        if(n%2==0) {
+public class Q09 {
+    private static boolean isPrime(int n) {
+        if(n>100) {
+            return false;
+        }
+        else {
+            for(int i=2; i<n/2; i++) {
+                if(n%i==0) {
+                    return false;
+                }
+            }
             return true;
         }
-        return false;
     }
 
-    private static int evenCount(int[] arr) {
+    private static int primeCount(int[] arr) {
        int count=0;
        for(int i=0; i<arr.length; i++) {
-            if(isEven(arr[i])) {
+            if(isPrime(arr[i])) {
                 count++;
             }
         }
@@ -33,6 +40,6 @@ public class Q7 {
     }
 
     public static void main(String[] args) {
-        System.out.println("The count of even numbers are: "+ evenCount(readArray()));
+        System.out.println("The count of prime numbers within 100 is: "+ primeCount(readArray()));
     }
 }

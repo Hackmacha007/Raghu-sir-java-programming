@@ -1,14 +1,16 @@
-//Q5. Write a java program to define a method to return average of integer array.
+//Q4. Write a java program to define a method to return biggest element from the array.
 
 import java.util.Scanner;
-public class Q5 {
-    private static double average(int[] arr) {
-        int sum=0;
+public class Q04 {
+    private static int biggest(int[] arr) {
+        int big=arr[0];
 
         for(int i=0; i<arr.length; i++) {
-            sum+=arr[i];
+            if(arr[i] > big) {
+                big = arr[i];
+            }
         }
-        return (double)sum/arr.length;
+        return big;
     }
 
     private static int[] readArray() {
@@ -25,6 +27,6 @@ public class Q5 {
     }
 
     public static void main(String[] args) {
-        System.out.println("The average of all the element is: "+ average(readArray()));
+        System.out.println("The biggest element is: "+ biggest(readArray()));
     }
 }

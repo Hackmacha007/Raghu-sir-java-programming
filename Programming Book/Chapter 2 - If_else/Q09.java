@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q8 {
+public class Q09 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter two integer number: ");
@@ -9,9 +9,9 @@ public class Q8 {
 
         sc.close();
 
-        if(n1 == n2)
-            System.out.println("The numbers are equal");
+        if(n1 > n2)
+            System.out.println(n1);
         else 
-            System.out.println("The numbers are not equal");
+            System.out.println(n2);
     }
 }
