@@ -1,0 +1,14 @@
+Class 31/10/22
+
+Q1. Why java is Object Oriented?
+Q2. Why java is not 100% Object Oriented?
+Q3. What is singleton class?
+Q4. What is WORA?
+Q5. What is Inheritance and how many Inheritance is possible in java?
+Q6. What is Diamond Problem?
+Q7. What is Method Binding?
+Q8. What is Typecasting and it's types?
+Q9. What is Polymorphism and types of Polymorphism?
+Q10. What is Encapsulationm and rules for Encapsulation?
+
+Class 01/11/22
