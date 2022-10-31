@@ -7,6 +7,7 @@ public class Q23 {
     private static int[] insertAtIndex(int [] arr, int element, int index) {
         int [] newArr = new int[arr.length+1];
         int j=0;
+        
         for(int i=0; i<newArr.length; i++) {
             if(i!=index) {
                 newArr[i] = arr[j];
