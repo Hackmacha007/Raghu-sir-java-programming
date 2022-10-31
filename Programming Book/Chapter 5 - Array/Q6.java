@@ -3,9 +3,11 @@
 import java.util.Scanner;
 public class Q6 {
     private static boolean isPrime(int n) {
-        for(int i=2; i<n/2; i++) 
-            if(n%i==0) 
+        for(int i=2; i<n/2; i++) {
+            if(n%i==0) {
                 return false;
+            }
+        }
         return true;
     }
 
@@ -29,7 +31,6 @@ public class Q6 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Q5 {
     private static double average(int[] arr) {
         int sum=0;
+
         for(int i=0; i<arr.length; i++) {
             sum+=arr[i];
         }
-
         return (double)sum/arr.length;
     }
 
@@ -21,7 +21,6 @@ public class Q5 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

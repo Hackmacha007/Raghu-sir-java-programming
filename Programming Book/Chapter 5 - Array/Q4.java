@@ -10,7 +10,6 @@ public class Q4 {
                 big = arr[i];
             }
         }
-
         return big;
     }
 
@@ -24,7 +23,6 @@ public class Q4 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

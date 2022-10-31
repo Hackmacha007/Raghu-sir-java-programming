@@ -10,7 +10,6 @@ public class Q3 {
                 small = arr[i];
             }
         }
-
         return small;
     }
 
@@ -24,7 +23,6 @@ public class Q3 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

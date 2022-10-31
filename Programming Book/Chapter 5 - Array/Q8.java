@@ -29,7 +29,6 @@ public class Q8 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

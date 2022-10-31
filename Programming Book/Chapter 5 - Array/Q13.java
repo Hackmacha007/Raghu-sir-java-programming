@@ -3,7 +3,6 @@
 import java.util.Scanner;
 public class Q13 {
     private static boolean isPalindrome(int n) {
-
         if(n>=100) {
             return false;
         }
@@ -40,7 +39,6 @@ public class Q13 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

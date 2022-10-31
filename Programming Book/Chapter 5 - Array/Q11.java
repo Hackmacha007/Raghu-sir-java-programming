@@ -34,7 +34,6 @@ public class Q11 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

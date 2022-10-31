@@ -6,7 +6,6 @@ public class Q2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array: ");
         int n = sc.nextInt();
-        
 
         int [] arr = new int[n]; 
         int sum=0;
