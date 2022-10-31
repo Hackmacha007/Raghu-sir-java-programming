@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Q23 {
     private static Scanner sc = new Scanner(System.in);
     
-    private static int[] insertAtIndex(int [] arr, int element, int index) {
+    private static int[] insertInArray(int [] arr, int element, int index) {
         int [] newArr = new int[arr.length+1];
         int j=0;
-        
+
         for(int i=0; i<newArr.length; i++) {
             if(i!=index) {
                 newArr[i] = arr[j];
@@ -46,6 +46,6 @@ public class Q23 {
         System.out.print("Enter the index number: ");
         int ind = sc.nextInt();
 
-        printArray(insertAtIndex(arr, ele, ind));
+        printArray(insertInArray(arr, ele, ind));
     }
 }
