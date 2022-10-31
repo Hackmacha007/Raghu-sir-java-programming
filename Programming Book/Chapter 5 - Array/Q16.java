@@ -3,7 +3,7 @@
 import java.util.Scanner;
 public class Q16 {
     private static boolean isEven(int n) {
-        if(n>=1000) {
+        if(n>1000) {
             return false;
         }
         else {
@@ -34,7 +34,6 @@ public class Q16 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

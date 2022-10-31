@@ -3,7 +3,7 @@
 import java.util.Scanner;
 public class Q10 {
     private static boolean isOdd(int n) {
-        if(n>=100) {
+        if(n>100) {
             return false;
         }
         else {

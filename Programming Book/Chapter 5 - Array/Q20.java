@@ -40,7 +40,6 @@ public class Q20 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

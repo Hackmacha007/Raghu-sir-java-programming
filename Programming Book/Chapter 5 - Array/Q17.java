@@ -3,7 +3,7 @@
 import java.util.Scanner;
 public class Q17 {
     private static boolean isOdd(int n) {
-        if(n>=1000 || n<=100) {
+        if(n>1000 || n<100) {
             return false;
         }
         else {
@@ -34,7 +34,6 @@ public class Q17 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

@@ -3,13 +3,15 @@
 import java.util.Scanner;
 public class Q14 {
     private static boolean isPrime(int n) {
-        if(n>=1000) {
+        if(n>1000) {
             return false;
         }
         else {
-            for(int i=2; i<n/2; i++) 
-            if(n%i==0) 
-                return false;
+            for(int i=2; i<n/2; i++) {
+                if(n%i==0) {
+                    return false;
+                }
+            }
             return true;
         }
     }
@@ -34,7 +36,6 @@ public class Q14 {
             arr[i] = sc.nextInt();
         }
         sc.close();
-
         return arr;
     }
 

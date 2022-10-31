@@ -3,7 +3,7 @@
 import java.util.Scanner;
 public class Q9 {
     private static boolean isPrime(int n) {
-        if(n>=100) {
+        if(n>100) {
             return false;
         }
         else {
