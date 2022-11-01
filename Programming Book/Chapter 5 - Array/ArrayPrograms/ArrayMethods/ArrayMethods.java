@@ -27,6 +27,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q21
     //To reverse the array
     public static int[] reverseArray(int[] array) {
         int[] reverseArray = new int [array.length];
@@ -39,6 +40,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q04, Q35
     //To get maximum/highest/biggest element of array
     public static int getBiggest(int[] array) {
         int biggestValue = array[0];
@@ -53,6 +55,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q03, Q35
     //To get minimum/lowest/smallest element of array
     public static int getSmallest(int[] array) {
         int smallestValue = array[0];
@@ -79,6 +82,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q05
     //To get the average of all elements of array
     public static double getAverage(int[] array) {
         int sum=0;
@@ -91,6 +95,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q22
     //To merge two array
     public static int[] mergeArrays(int[] firArray, int[] secArray) {
         int[] mergedArray = new int[firArray.length + secArray.length];
@@ -110,6 +115,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q23
     //To insert a element at specified index in array
     public static int[] insertAtIndex(int[] array, int element, int index) {
         if(index < 0 || index > array.length) {
@@ -133,6 +139,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q24
     //To delete a element at specified index in array
     public static int[] deleteAtIndex(int[] array, int index) {
         if(index < 0 || index >= array.length) {
@@ -155,6 +162,7 @@ public class ArrayMethods {
     }
     
 
+    //USED IN Q27
     //To merge two sorted array into one array in sorted format
     public static int[] mergeSortedArray(int[] firArray, int[] secArray) {
         int[] mergedArray = new int[firArray.length+secArray.length];
@@ -179,6 +187,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q26
     //To merge two array in zigzag order
     public static int[] mergeArrayZigZagOrder(int[] firArray, int[] secArray) {
         int[] mergedArray = new int[firArray.length+secArray.length];
@@ -199,6 +208,7 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q25
     //To insert a element at specified index in array
     public static int[] insertArrayAtIndex(int[] array, int[] secArray, int index) {
         if(index < 0 || index > array.length) {
@@ -225,4 +235,104 @@ public class ArrayMethods {
 
         return newArray;
     }
+
+
+    //USED IN Q31
+    //To search the element if it is present in array or not return -1 if not present
+    public static int searchInArray(int[] array, int element) {
+        for(int i=0; i<array.length; i++) {
+            if(array[i] == element) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+    //USED IN Q32, Q33
+    //To sort the array using BubbleSort algorithm - [Biggest element first]
+    public static int[] sortArray(int[] array) {
+        int[] sArray = array;
+
+        //using k for phases
+        for(int k=0; k<sArray.length-1; k++){
+            for(int i=0; i<sArray.length-1-k; i++){
+                if(sArray[i] < sArray[i+1]){
+                    int temp = sArray[i];
+                    sArray[i] = sArray[i+1];
+                    sArray[i+1] = temp;
+                }
+            }
+        }
+
+        return sArray;
+    }
+
+
+    //USED IN Q37
+    //To count the even numbers elements present in array
+    public static int evenCountInArray(int[] array) {
+        int count=0;
+
+        for(int i=0; i<array.length; i++) {
+            if(array[i] % 2 == 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    //USED IN Q37
+    //To count the even numbers elements present in array
+    public static int oddCountInArray(int[] array) {
+        int count=0;
+
+        for(int i=0; i<array.length; i++) {
+            if(array[i] % 2 != 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    //////////////////////////////////////////////////////////////////////////////////
+    //            DANGER ZONE - DO NOT TOUCH ANYTHING BELOW THIS LINE               //
+    //////////////////////////////////////////////////////////////////////////////////
+
+    //USED IN Q38
+    //To return the even numbers present in array
+    public static int[] evenElementsInArray(int[] array) {
+        int[] evenArray = new int[evenCountInArray(array)];
+        int j=0;
+
+        for(int i=0; i<evenArray.length; i++) {
+            if(array[i] % 2 == 0) {
+                evenArray[j++] = array[i];
+            }
+        }
+
+        return evenArray;
+    }
+
+
+    //USED IN Q38
+    //To return the odd numbers present in array
+    public static int[] oddElementsInArray(int[] array) {
+        int[] oddArray = new int[oddCountInArray(array)];
+        int j=0;
+
+        for(int i=0; i<oddArray.length; i++) {
+            if(array[i] % 2 != 0) {
+                oddArray[j++] = array[i];
+            }
+        }
+
+        return oddArray;
+    }
+
+    
 }
