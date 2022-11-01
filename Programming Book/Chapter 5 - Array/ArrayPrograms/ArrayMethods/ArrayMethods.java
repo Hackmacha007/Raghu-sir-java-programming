@@ -5,7 +5,7 @@ public class ArrayMethods {
     private static Scanner sc = new Scanner(System.in);
 
     //To print the array
-    public static void printArray(int [] array) {
+    public static void printArray(int[] array) {
         for(int i=0; i<array.length; i++) {
             System.out.print(array[i] + " ");
         }
@@ -13,12 +13,12 @@ public class ArrayMethods {
 
 
     //To read the array
-    public static int [] readArray() {
+    public static int[] readArray() {
         System.out.print("Enter the size of array: ");
         int size = sc.nextInt();
 
         System.out.println("Enter the elements of array: ");
-        int [] array = new int[size];
+        int[] array = new int[size];
         for(int i=0; i<array.length; i++) {
             array[i] = sc.nextInt();
         }
@@ -28,8 +28,8 @@ public class ArrayMethods {
 
 
     //To reverse the array
-    public static int [] reverseArray(int [] array) {
-        int [] reverseArray = new int [array.length];
+    public static int[] reverseArray(int[] array) {
+        int[] reverseArray = new int [array.length];
 
         for(int i=0; i<array.length; i++) {
             reverseArray[i] = array[array.length-1-i];
@@ -40,7 +40,7 @@ public class ArrayMethods {
 
 
     //To get maximum/highest/biggest element of array
-    public static int getBiggest(int [] array) {
+    public static int getBiggest(int[] array) {
         int biggestValue = array[0];
 
         for(int i=0; i<array.length; i++) {
@@ -54,7 +54,7 @@ public class ArrayMethods {
 
 
     //To get minimum/lowest/smallest element of array
-    public static int getSmallest(int [] array) {
+    public static int getSmallest(int[] array) {
         int smallestValue = array[0];
 
         for(int i=0; i<array.length; i++) {
@@ -68,7 +68,7 @@ public class ArrayMethods {
 
 
     //To get the sum of all elements of array
-    public static int getSum(int [] array) {
+    public static int getSum(int[] array) {
         int sum=0;
 
         for(int i=0; i<array.length; i++) {
@@ -111,13 +111,13 @@ public class ArrayMethods {
 
 
     //To insert a element at specified index in array
-    public static int[] insertAtIndex(int [] array, int element, int index) {
+    public static int[] insertAtIndex(int[] array, int element, int index) {
         if(index < 0 || index > array.length) {
             System.out.println("Error: Index out of range.");
             return array;
         }
 
-        int [] newArray = new int[array.length+1];
+        int[] newArray = new int[array.length+1];
         newArray[index] = element;
 
         for(int i=0; i<newArray.length-1; i++) {
@@ -134,13 +134,13 @@ public class ArrayMethods {
 
 
     //To delete a element at specified index in array
-    public static int[] deleteAtIndex(int [] array, int index) {
+    public static int[] deleteAtIndex(int[] array, int index) {
         if(index < 0 || index >= array.length) {
             System.out.println("Error: Index out of range.");
             return array;
         }
 
-        int [] newArray = new int[array.length-1];
+        int[] newArray = new int[array.length-1];
 
         for(int i=0; i<newArray.length; i++) {
             if(i<index) {
@@ -148,6 +148,78 @@ public class ArrayMethods {
             }
             else {
                 newArray[i] = array[i+1];
+            }
+        }
+
+        return newArray;
+    }
+    
+
+    //To merge two sorted array into one array in sorted format
+    public static int[] mergeSortedArray(int[] firArray, int[] secArray) {
+        int[] mergedArray = new int[firArray.length+secArray.length];
+        int i=0, j=0, k=0;
+
+        while(i<firArray.length && j<secArray.length) {
+            if(firArray[i] < secArray[j]) {
+                mergedArray[k++] = firArray[i++];
+            }
+            else {
+                mergedArray[k++] = secArray[j++];
+            }
+        }
+        while(i<firArray.length) {
+            mergedArray[k++] = firArray[i++];
+        }
+        while(i<secArray.length) {
+            mergedArray[k++] = secArray[j++];
+        }
+
+        return mergedArray;
+    }
+
+
+    //To merge two array in zigzag order
+    public static int[] mergeArrayZigZagOrder(int[] firArray, int[] secArray) {
+        int[] mergedArray = new int[firArray.length+secArray.length];
+        int i=0, j=0;
+
+        while(i<firArray.length && i<secArray.length) {
+            mergedArray[j++] = firArray[i];
+            mergedArray[j++] = secArray[i++];
+        }
+        while(i<firArray.length) {
+            mergedArray[j++] = firArray[i++];
+        }
+        while(i<secArray.length) {
+            mergedArray[j++] = secArray[i++];
+        }
+
+        return mergedArray;
+    }
+
+
+    //To insert a element at specified index in array
+    public static int[] insertArrayAtIndex(int[] array, int[] secArray, int index) {
+        if(index < 0 || index > array.length) {
+            System.out.println("Error: Index out of range.");
+            return array;
+        }
+
+        int[] newArray = new int[array.length + secArray.length];
+        int i=0, j=0, k=0;
+
+        while(i < newArray.length) {
+            if(i<=index) {
+                newArray[i++] = array[k++];
+            }
+            else {
+                while(j<secArray.length) {
+                    newArray[i++] = secArray[j++];
+                }
+                while(k<array.length) {
+                    newArray[i++] = array[k++];
+                }
             }
         }
 

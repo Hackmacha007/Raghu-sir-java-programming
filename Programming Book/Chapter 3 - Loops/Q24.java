@@ -17,7 +17,7 @@ public class Q24 {
             pw *= n;
             p--;
         }
-        return pw;
+        return pw;2
     }
 
     private static boolean isArmstrong(int n) {
