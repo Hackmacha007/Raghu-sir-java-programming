@@ -2,8 +2,7 @@
 
 import java.util.Scanner;
 public class Q1 {
-    static void printNumbers(int n)
-    {
+    static void printNumbers(int n) {
         if (n<=0)
         {
             return;
