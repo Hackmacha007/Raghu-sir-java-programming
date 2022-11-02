@@ -187,7 +187,7 @@ public class ArrayMethods {
     }
 
 
-    //USED IN Q26
+    //USED IN Q26, Q36
     //To merge two array in zigzag order
     public static int[] mergeArrayZigZagOrder(int[] firArray, int[] secArray) {
         int[] mergedArray = new int[firArray.length+secArray.length];
@@ -249,7 +249,7 @@ public class ArrayMethods {
     }
 
 
-    //USED IN Q32, Q33
+    //USED IN Q32, Q33, Q39
     //To sort the array using BubbleSort algorithm - [Biggest element first]
     public static int[] sortArray(int[] array) {
         int[] sArray = array;
@@ -299,17 +299,13 @@ public class ArrayMethods {
     }
 
 
-    //////////////////////////////////////////////////////////////////////////////////
-    //            DANGER ZONE - DO NOT TOUCH ANYTHING BELOW THIS LINE               //
-    //////////////////////////////////////////////////////////////////////////////////
-
-    //USED IN Q38
+    //USED IN Q38, Q36
     //To return the even numbers present in array
     public static int[] evenElementsInArray(int[] array) {
         int[] evenArray = new int[evenCountInArray(array)];
         int j=0;
 
-        for(int i=0; i<evenArray.length; i++) {
+        for(int i=0; i<array.length; i++) {
             if(array[i] % 2 == 0) {
                 evenArray[j++] = array[i];
             }
@@ -319,13 +315,13 @@ public class ArrayMethods {
     }
 
 
-    //USED IN Q38
+    //USED IN Q38, Q36
     //To return the odd numbers present in array
     public static int[] oddElementsInArray(int[] array) {
         int[] oddArray = new int[oddCountInArray(array)];
         int j=0;
 
-        for(int i=0; i<oddArray.length; i++) {
+        for(int i=0; i<array.length; i++) {
             if(array[i] % 2 != 0) {
                 oddArray[j++] = array[i];
             }
@@ -334,5 +330,17 @@ public class ArrayMethods {
         return oddArray;
     }
 
+
+    //////////////////////////////////////////////////////////////////////////////////
+    //            DANGER ZONE - CODE BELOW THIS LINE MAY NOT WORK                   //
+    //////////////////////////////////////////////////////////////////////////////////
+
+    //USED IN Q34
+    //To return a array by removing the duplicates values
+    public static int[] removeDuplicates(int[] array) {
+        int[] remDuplicate = new int[array.length];
+
+        return remDuplicate;
+    }
     
 }

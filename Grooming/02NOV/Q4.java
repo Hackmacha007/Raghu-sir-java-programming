@@ -1,6 +1,7 @@
-import java.util.Scanner;
+//Q4. WAJP to print sum of all the armstrong numbers present between user entered two digit number.
 
-public class Q24 {
+import java.util.Scanner;
+public class Q4 {
     private static int digitCount(int n) {
         int count = 0;
         do {
@@ -35,14 +36,22 @@ public class Q24 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int n = sc.nextInt();
+
+        System.out.println("Enter the starting range: ");
+        int start = sc.nextInt();
+
+        System.out.println("Enter the ending range: ");
+        int end = sc.nextInt();
         sc.close();
 
-        if(isArmstrong(n)) {
-            System.out.println("Armstrong number");
-        } else {
-            System.out.println("Not an Armstrong number");
+        int sum=0;
+
+        for(int i=start; i<=end; i++) {
+            if(isArmstrong(i)) {
+                sum = sum+i;
+            }
         }
-    }
+
+        System.out.println("Sum of armstrong number from "+ start + " to " + end + " is: " + sum);
+    }   
 }

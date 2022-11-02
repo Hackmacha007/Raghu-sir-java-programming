@@ -1,0 +1,34 @@
+Class 31/10/22
+
+Q1. Why java is Object Oriented?
+Q2. Why java is not 100% Object Oriented?
+Q3. What is singleton class?
+Q4. What is WORA?
+Q5. What is Inheritance and how many Inheritance is possible in java?
+Q6. What is Diamond Problem?
+Q7. What is Method Binding?
+Q8. What is Typecasting and it's types?
+Q9. What is Polymorphism and types of Polymorphism?
+Q10. What is Encapsulationm and rules for Encapsulation?
+
+Class 01/11/22
+Q1. Explain public static void main(String [] args)?
+Q2. Explain System.out.println? 
+Q3. What is Constructor Chaining?
+Q4. Difference between this and super?
+Q5. Difference between Early Binding and Late Binding?
+Q6. Can we Override Static Method?
+Q7. What is Object Class and how many methods are there in Object Class?
+
+Class 02/11/22
+
+Q1. Difference between Overloading and Overriding?
+Q2. Explain Final, Finally, Finalize?
+Q3. Real time example for Method Overloading?
+Q4. Can we make Consructor Static?
+Q5. Can we call Static Method by Object Reference?
+Q6. What is Abstract Class?
+Q7. Difference between Abstract and Concrete Method?
+Q8. What is Interface?
+Q9. Difference between Interface and Abstract Class?
+Q10. Can we declare Concrete Method in Interface? If yes then what type of Method? Static or Non-Static?
