@@ -331,6 +331,61 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q30
+    //To print the frequency of array elements
+    public static void printFrequency(int[] array) {
+        boolean[] arr = new boolean[array.length];
+
+        for(int i=0; i<array.length; i++) {
+            if(arr[i] == false) {
+                int count=1;
+                for(int j=i+1; j<array.length; j++) {
+                    if(array[i] == array[j]) {
+                        count++;
+                        arr[j] = true;
+                    }
+                }
+                System.out.println(array[i] + " Present -> " + count);
+            }
+        }
+    }
+
+
+    //USED IN 28
+    //To print the common elements between two arrays
+    public static void printCommonElements(int[] firArray, int[] secArray) {
+        for(int i=0; i<firArray.length; i++) {
+            for(int j=0; j<secArray.length; j++) {
+                if(firArray[i] == secArray[j]) {
+                    System.out.print(firArray[i]+" ");
+                }
+            }
+        }        
+    }
+
+
+    //USED IN Q29
+    //To print the magic values from the array
+    public static void printMagicValues(int[] array) {
+        for(int i=0; i<array.length; i++) {
+            int temp=array[i];
+
+            while(temp>9) {
+                int sum=0;
+                while(temp!=0) {
+                    int ld = temp%10;
+                    sum = sum+ld;
+                    temp /= 10;
+                }
+                temp=sum;   
+            }
+            if(temp==1) {
+                System.out.print(array[i] + " ");
+            }
+        }
+    }
+
+    
     //////////////////////////////////////////////////////////////////////////////////
     //            DANGER ZONE - CODE BELOW THIS LINE MAY NOT WORK                   //
     //////////////////////////////////////////////////////////////////////////////////
