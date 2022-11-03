@@ -386,16 +386,19 @@ public class ArrayMethods {
     }
 
     
-    //////////////////////////////////////////////////////////////////////////////////
-    //            DANGER ZONE - CODE BELOW THIS LINE MAY NOT WORK                   //
-    //////////////////////////////////////////////////////////////////////////////////
-
     //USED IN Q34
     //To return a array by removing the duplicates values
     public static int[] removeDuplicates(int[] array) {
-        int[] remDuplicate = new int[array.length];
+        int[] newArray = array;
 
-        return remDuplicate;
-    }
-    
+        for(int i=0; i<newArray.length; i++) {
+            for(int j=i+1; j<newArray.length; j++) {
+                if(newArray[i] == newArray[j]) {
+                    newArray = deleteAtIndex(newArray, j);
+                }
+            }
+        }
+
+        return newArray;
+    } 
 }
