@@ -33,7 +33,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q4, Q6
+    //USED IN Q4, Q6, Q8, Q11
     //To return the count of capital vowels present in the string
     public static int countCapitalVowels(String str) {
         int count=0;
@@ -49,7 +49,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q8
+    //USED IN Q8, Q10
     //To return the count of consonants present in the string
     public static int countCapitalConsonants(String str) {
         int count=0;
@@ -68,7 +68,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q5, Q6, Q9
+    //USED IN Q5, Q6, Q9, Q10
     //To return the count of small vowels present in the string
     public static int countSmallVowels(String str) {
         int count=0;
@@ -84,7 +84,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q9
+    //USED IN Q9, Q11
     //To return the count of consonants present in the string
     public static int countSmallConsonants(String str) {
         int count=0;
@@ -140,14 +140,6 @@ public class StringMethods {
         
         return count;
     }
-    
-    
-    
-    
-    
-    
-
-
 
 }
 
