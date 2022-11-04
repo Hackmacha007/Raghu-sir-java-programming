@@ -145,6 +145,20 @@ public class StringMethods {
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
-////    DANGER ZONE - MAYBE THIS CODE DOESN'T WORK OR NOT NEEDED AT THE MOMENT      /////
+////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
+////            MAYBE DOESN'T WORK OR NOT NEEDED AT THE MOMENT                      /////
 /////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*
+Hi, Stranger! 
+What are you doing here?
+You are not supposed to be here.
+This is a dangerous zone.
+You may find code here that doesn't work or is not needed at the moment.
+
+If you are here to help me or need my help, 
+Contact me at: 
+    Telegram: sandeep_patel07
+*/
 
