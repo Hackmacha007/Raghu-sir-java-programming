@@ -49,41 +49,6 @@ public class StringMethods {
     }
 
 
-    //USED IN Q5, Q6, Q7
-    //To return the count of small vowels present in the string
-    public static int countSmallVowels(String str) {
-        int count=0;
-
-        for(int i=0; i<str.length(); i++) {
-            char ch = str.charAt(i);
-            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-
-    //USED IN Q7
-    //To return the count of consonants present in the string
-    public static int countSmallConsonants(String str) {
-        int count=0;
-        
-        for(int i=0; i<str.length(); i++) {
-            char ch = str.charAt(i);
-            
-            if(ch>='a' && ch<='z') {
-                if(ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
-                    count++;
-                }
-            }
-        }
-        
-        return count;
-    }
-
-
     //USED IN Q8
     //To return the count of consonants present in the string
     public static int countCapitalConsonants(String str) {
@@ -103,6 +68,87 @@ public class StringMethods {
     }
 
 
+    //USED IN Q5, Q6, Q9
+    //To return the count of small vowels present in the string
+    public static int countSmallVowels(String str) {
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    //USED IN Q9
+    //To return the count of consonants present in the string
+    public static int countSmallConsonants(String str) {
+        int count=0;
+        
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            
+            if(ch>='a' && ch<='z') {
+                if(ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
+                    count++;
+                }
+            }
+        }
+        
+        return count;
+    }
+
+
+    //USED IN Q7
+    //To return the count of vowels present in the string
+    public static int countVowels(String str) {
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    
+    //USED IN Q7
+    //To return the count of vowels present in the string
+    public static int countConsonants(String str) {
+        int count=0;
+        
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            if(ch>='A' && ch<='Z') {
+                if(ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U') {
+                    count++;
+                }
+            }
+            else if(ch>='a' && ch<='z') {
+                if(ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
+                    count++;
+                }
+            }
+        }
+        
+        return count;
+    }
+    
+    
+    
+    
+    
+    
+
+
+
 }
 
 
@@ -110,17 +156,3 @@ public class StringMethods {
 ////    DANGER ZONE - MAYBE THIS CODE DOESN'T WORK OR NOT NEEDED AT THE MOMENT      /////
 /////////////////////////////////////////////////////////////////////////////////////////
 
-// //USED IN Q8
-// //To return the count of vowels present in the string
-// public static int countVowels(String str) {
-//     int count=0;
-
-//     for(int i=0; i<str.length(); i++) {
-//         char ch = str.charAt(i);
-//         if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
-//             count++;
-//         }
-//     }
-
-//     return count;
-// }
