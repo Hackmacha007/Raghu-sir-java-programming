@@ -1,7 +1,7 @@
 package StringMethods;
 
 public class StringMethods {
-    //USED IN Q1, Q2
+    //USED IN Q1, Q2,
     //To return the count of capital letters present in the string
     public static int countCapitalLetters(String str) {
         int count=0;
@@ -17,7 +17,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q2, Q3
+    //USED IN Q2, Q3, Q13
     //To return the count of small letters present in the string
     public static int countSmallLetters(String str) {
         int count=0;
@@ -141,6 +141,39 @@ public class StringMethods {
         return count;
     }
 
+
+    //USED IN Q12
+    //To return the count of letters present in the string
+    public static int countLetters(String str) {
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch>='A' && ch<='Z' || ch>='a' && ch<='z') {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    //USED IN Q12
+    //To return the count of special characters present in the string
+    public static int countSpecialCharacters(String str) {
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            if(ch>=0 && ch<=47 || ch>=58 && ch<=64 || ch>=91 && ch<=96 || ch>=123 && ch<=127) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
 }
 
 
@@ -161,4 +194,3 @@ If you are here to help me or need my help,
 Contact me at: 
     Telegram: sandeep_patel07
 */
-
