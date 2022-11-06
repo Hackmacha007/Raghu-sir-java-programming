@@ -9,6 +9,6 @@ public class Q01 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println(countCapitalLetters(st));
+        System.out.println("Capital Letters count is: " + countCapitalLetters(st));
     }
 }

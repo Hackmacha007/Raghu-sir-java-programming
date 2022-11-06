@@ -9,7 +9,7 @@ public class Q09 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println("Small vowels count is: " + countSmallVowels(st));
+        System.out.println("Small Vowels count is: " + countSmallVowels(st));
         System.out.println("Small Consonants count is: " + countSmallConsonants(st));
     }
 }

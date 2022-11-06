@@ -1,15 +1,15 @@
-//Q8. WAJP to count how many Capital Vowels and Consonants present in the String.
+//Q20. WAJP to count how many Letters and Digits present in the string.
 
 import static StringMethods.StringMethods.*;
 import java.util.Scanner;
-public class Q08 {
+public class Q20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string: ");
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println("Capital Vowels count is: " + countCapitalVowels(st));
-        System.out.println("Capital Consonants count is: " + countCapitalConsonants(st));
+        System.out.println("Letters count is: " + countLetters(st));
+        System.out.println("Digits count is: " + countDigits(st));
     }
 }

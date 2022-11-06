@@ -1,7 +1,7 @@
 package StringMethods;
 
 public class StringMethods {
-    //USED IN Q1, Q2,
+    //USED IN Q1, Q2, Q14, Q15
     //To return the count of capital letters present in the string
     public static int countCapitalLetters(String str) {
         int count=0;
@@ -17,7 +17,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q2, Q3, Q13
+    //USED IN Q2, Q3, Q13, Q15
     //To return the count of small letters present in the string
     public static int countSmallLetters(String str) {
         int count=0;
@@ -33,7 +33,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q4, Q6, Q8, Q11
+    //USED IN Q4, Q6, Q8, Q11, Q16, Q18
     //To return the count of capital vowels present in the string
     public static int countCapitalVowels(String str) {
         int count=0;
@@ -49,8 +49,8 @@ public class StringMethods {
     }
 
 
-    //USED IN Q8, Q10
-    //To return the count of consonants present in the string
+    //USED IN Q8, Q10, Q17, Q18
+    //To return the count of capital consonants present in the string
     public static int countCapitalConsonants(String str) {
         int count=0;
         
@@ -68,7 +68,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q5, Q6, Q9, Q10
+    //USED IN Q5, Q6, Q9, Q10, Q17, Q19
     //To return the count of small vowels present in the string
     public static int countSmallVowels(String str) {
         int count=0;
@@ -84,8 +84,8 @@ public class StringMethods {
     }
 
 
-    //USED IN Q9, Q11
-    //To return the count of consonants present in the string
+    //USED IN Q9, Q11, Q16, Q19
+    //To return the count of small consonants present in the string
     public static int countSmallConsonants(String str) {
         int count=0;
         
@@ -120,7 +120,7 @@ public class StringMethods {
 
     
     //USED IN Q7
-    //To return the count of vowels present in the string
+    //To return the count of consonants present in the string
     public static int countConsonants(String str) {
         int count=0;
         
@@ -159,7 +159,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q12
+    //USED IN Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19
     //To return the count of special characters present in the string
     public static int countSpecialCharacters(String str) {
         int count=0;
@@ -174,6 +174,21 @@ public class StringMethods {
         return count;
     }
 
+
+    //USED IN Q20
+    //To return the count of digits present in the string
+    public static int countDigits(String str) {
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            if(ch>='0' && ch<='9') {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
 
 

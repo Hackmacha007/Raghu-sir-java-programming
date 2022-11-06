@@ -9,6 +9,6 @@ public class Q03 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println(countSmallLetters(st));
+        System.out.println("Small Letters count is: " + countSmallLetters(st));
     }
 }

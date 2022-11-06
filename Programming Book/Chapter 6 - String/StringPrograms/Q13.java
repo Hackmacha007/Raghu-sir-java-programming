@@ -9,7 +9,7 @@ public class Q13 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println("Small Letter count is: " + countSmallLetters(st));
-        System.out.println("Special character count is: " + countSpecialCharacters(st));
+        System.out.println("Small Letters count is: " + countSmallLetters(st));
+        System.out.println("Special Characters count is: " + countSpecialCharacters(st));
     }
 }

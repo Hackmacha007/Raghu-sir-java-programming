@@ -9,7 +9,7 @@ public class Q02 {
         String st = sc.nextLine();
         sc.close();
 
-        System.out.println("Capital letters are: "+ countCapitalLetters(st));
-        System.out.println("Small letters are: "+countSmallLetters(st));
+        System.out.println("Capital Letters count is: "+ countCapitalLetters(st));
+        System.out.println("Small Letters count is: "+countSmallLetters(st));
     }
 }

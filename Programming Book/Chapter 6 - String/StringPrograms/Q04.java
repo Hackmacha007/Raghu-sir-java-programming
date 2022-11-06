@@ -9,6 +9,6 @@ public class Q04 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println(countCapitalVowels(st));
+        System.out.println("Capital Vowels count is: " + countCapitalVowels(st));
     }
 }

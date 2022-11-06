@@ -9,6 +9,6 @@ public class Q05 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println(countSmallVowels(st));
+        System.out.println("Small Vowels count is: " + countSmallVowels(st));
     }
 }

@@ -10,7 +10,7 @@ public class Q17 {
         sc.close();
         
         System.out.println("Small Vowels count is: " + countSmallVowels(st));
-        System.out.println("Capital Consonant count is: " + countCapitalConsonants(st));
-        System.out.println("Special character count is: " + countSpecialCharacters(st));
+        System.out.println("Capital Consonants count is: " + countCapitalConsonants(st));
+        System.out.println("Special Characters count is: " + countSpecialCharacters(st));
     }
 }

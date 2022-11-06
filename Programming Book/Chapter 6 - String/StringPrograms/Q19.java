@@ -10,7 +10,7 @@ public class Q19 {
         sc.close();
         
         System.out.println("Small Vowels count is: " + countSmallVowels(st));
-        System.out.println("Small Consonant count is: " + countSmallConsonants(st));
-        System.out.println("Special character count is: " + countSpecialCharacters(st));
+        System.out.println("Small Consonants count is: " + countSmallConsonants(st));
+        System.out.println("Special Characters count is: " + countSpecialCharacters(st));
     }
 }

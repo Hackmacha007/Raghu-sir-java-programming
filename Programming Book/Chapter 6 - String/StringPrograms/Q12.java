@@ -10,6 +10,6 @@ public class Q12 {
         sc.close();
         
         System.out.println("Letters count is: " + countLetters(st));
-        System.out.println("Special character count is: " + countSpecialCharacters(st));
+        System.out.println("Special Characters count is: " + countSpecialCharacters(st));
     }
 }

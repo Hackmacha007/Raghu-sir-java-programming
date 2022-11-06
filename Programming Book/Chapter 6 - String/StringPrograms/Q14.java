@@ -9,7 +9,7 @@ public class Q14 {
         String st = sc.nextLine();
         sc.close();
         
-        System.out.println("Capital Letter count is: " + countCapitalLetters(st));
-        System.out.println("Special character count is: " + countSpecialCharacters(st));
+        System.out.println("Capital Letters count is: " + countCapitalLetters(st));
+        System.out.println("Special Characters count is: " + countSpecialCharacters(st));
     }
 }

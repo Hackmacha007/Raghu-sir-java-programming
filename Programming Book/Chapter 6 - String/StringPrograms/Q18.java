@@ -10,7 +10,7 @@ public class Q18 {
         sc.close();
         
         System.out.println("Capital Vowels count is: " + countCapitalVowels(st));
-        System.out.println("Capital Consonant count is: " + countCapitalConsonants(st));
-        System.out.println("Special character count is: " + countSpecialCharacters(st));
+        System.out.println("Capital Consonants count is: " + countCapitalConsonants(st));
+        System.out.println("Special Characters count is: " + countSpecialCharacters(st));
     }
 }
