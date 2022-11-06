@@ -191,7 +191,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q24
+    //USED IN Q24, Q34
     //To convert and return the lowercased string
     public static String convertToLowercase(String str) {
         String string = "";
@@ -211,7 +211,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q25
+    //USED IN Q25, Q33
     //To convert and return the uppercased string
     public static String convertToUppercase(String str) {
         String string = "";
@@ -279,7 +279,131 @@ public class StringMethods {
         
         return string;
     }
-}
+
+
+    //USED IN Q28
+    //To return after converting the first character of every word into capital and remaining small in string.
+    public static String convertEveryWordsFirstCharacterToCapital(String str) { 
+        String string = "";
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(count==0) {
+                if(ch>='a' && ch<='z') {
+                    string = string + (char)(ch-32);
+                }
+                else {
+                    string = string + ch;
+                }
+                count++;
+            }
+            else {
+                if(ch==' ') {
+                    string = string + ch;
+                    count=0;
+                }
+                else {
+                    if(ch>='A' && ch<='Z') {
+                        string = string + (char)(ch+32);
+                    }
+                    else {
+                        string = string + ch;
+                    }
+                }
+            }
+        }
+        
+        return string;
+    }
+
+
+    //USED IN Q29
+    //To return after converting the first character of every word into small and remaining capital in string.
+    public static String convertEveryWordsFirstCharacterToSmall(String str) { 
+        String string = "";
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(count==0) {
+                if(ch>='A' && ch<='Z') {
+                    string = string + (char)(ch+32);
+                }
+                else {
+                    string = string + ch;
+                }
+                count++;
+            }
+            else {
+                if(ch==' ') {
+                    string = string + ch;
+                    count=0;
+                }
+                else {
+                    if(ch>='a' && ch<='z') {
+                        string = string + (char)(ch-32);
+                    }
+                    else {
+                        string = string + ch;
+                    }
+                }
+            }
+        }
+        
+        return string;
+    }
+
+
+    //USED IN Q32
+    //To return the sum of digits present in the string.
+    public static int sumOfDigitsOfString(String str) {
+        int sum=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch>='0' && ch<='9') {
+                sum = sum + ch-48;
+            }
+        }
+
+        return sum;
+    }
+
+
+    //USED IN Q36
+    //To return the reversed string.
+    public static String reverseString(String str) {
+        String revString = "";
+
+        for(int i=str.length()-1; i>=0; i--) {
+            char ch = str.charAt(i);
+            revString = revString + ch;
+        }
+
+        return revString;
+    }
+  
+
+    //USED IN Q37
+    //To check if the string is palindrome or not
+    public static boolean isStringPalindrome(String str) {
+        int i=0, j=str.length()-1;
+
+        while(i<j) {
+            if(str.charAt(i) != str.charAt(j)) {
+                return false;
+            }
+            i++;
+            j--;
+        }
+        
+        return true;
+    }
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -299,3 +423,43 @@ If you are here to help me or need my help,
 Contact me at: 
     Telegram: sandeep_patel07
 */
+
+
+    //USED IN Q29
+    //To return after converting the last character of every word into capital and remaining small in string.
+    public static String convertEveryWordsLastCharacterToSmall(String str) { 
+        String string = "";
+        int count=0;
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(count==0) {
+                if(ch>='A' && ch<='Z') {
+                    string = string + (char)(ch+32);
+                }
+                else {
+                    string = string + ch;
+                }
+                count++;
+            }
+            else {
+                if(ch==' ') {
+                    string = string + ch;
+                    count=0;
+                }
+                else {
+                    if(ch>='a' && ch<='z') {
+                        string = string + (char)(ch-32);
+                    }
+                    else {
+                        string = string + ch;
+                    }
+                }
+            }
+        }
+        
+        return string;
+    }
+
+}
