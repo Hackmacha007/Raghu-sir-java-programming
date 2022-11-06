@@ -189,6 +189,96 @@ public class StringMethods {
 
         return count;
     }
+
+
+    //USED IN Q24
+    //To convert and return the lowercased string
+    public static String convertToLowercase(String str) {
+        String string = "";
+       
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch>='A' && ch<='Z') {
+                string = string + (char)(ch+32);
+            }
+            else {
+                string = string + ch;
+            }
+        }
+
+        return string;
+    }
+
+
+    //USED IN Q25
+    //To convert and return the uppercased string
+    public static String convertToUppercase(String str) {
+        String string = "";
+       
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch>='a' && ch<='z') {
+                string = string + (char)(ch-32);
+            }
+            else {
+                string = string + ch;
+            }
+        }
+        
+        return string;
+    }
+
+
+    //USED IN Q26
+    //To return after the conversion of vowels to lowercase and remaining to capital from a string.
+    public static String convertVowelsToSmallRemainingCapital(String str) {
+        String string = "";
+       
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
+                string = string + (char)(ch+32);
+            }
+            else {
+                if((ch>='a' && ch<='z') && ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
+                    string = string + (char)(ch-32);
+                }
+                else {
+                    string = string + ch;
+                }
+            }
+        }
+        
+        return string;
+    }
+
+
+    //USED IN Q27
+    //To return after the conversion of vowels to uppercase and remaining to small from a string.
+    public static String convertVowelsToCapitalRemainingSmall(String str) {
+        String string = "";
+       
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
+                string = string + (char)(ch-32);
+            }
+            else {
+                if((ch>='A' && ch<='Z') && ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U') {
+                    string = string + (char)(ch+32);
+                }
+                else {
+                    string = string + ch;
+                }
+            }
+        }
+        
+        return string;
+    }
 }
 
 
