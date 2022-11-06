@@ -142,7 +142,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q12
+    //USED IN Q12, Q20
     //To return the count of letters present in the string
     public static int countLetters(String str) {
         int count=0;
