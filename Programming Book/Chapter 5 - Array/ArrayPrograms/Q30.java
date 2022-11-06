@@ -1,4 +1,4 @@
-//Q3. Write a java program to define a method to print frequency of each array elements.
+//Q30. Write a java program to define a method to print frequency of each array elements.
 
 import static ArrayMethods.ArrayMethods.*;
 public class Q30 {
