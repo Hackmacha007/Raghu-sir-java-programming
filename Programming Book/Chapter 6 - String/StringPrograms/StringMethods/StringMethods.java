@@ -543,17 +543,17 @@ public class StringMethods {
                 if(ch[i]==' ') {
                     break;
                 }
-                
-                if(i==ch.length-1) {
+                else if(i==ch.length-1) {
                     st = st + ch[i];
                     i++;
                     count++;
                     break;
                 }
-                
-                st = st + ch[i];
-                i++;
-                count++;
+                else {
+                    st = st + ch[i];
+                    i++;
+                    count++;
+                }
             }
 
             System.out.println(st + " --> " + count);
