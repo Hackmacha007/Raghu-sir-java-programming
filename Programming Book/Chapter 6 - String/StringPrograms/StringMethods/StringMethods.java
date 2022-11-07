@@ -530,6 +530,37 @@ public class StringMethods {
     }
 
 
+    //USED IN Q43
+    //To print the count of characters present in the each word
+    public static void countCharsPresentInTheWord(String str) {
+        char[] ch = str.toCharArray();
+        
+        for(int i=0; i<ch.length; i++){
+            String st = "";
+            int count=0;
+
+            while(true) {
+                if(ch[i]==' ') {
+                    break;
+                }
+                
+                if(i==ch.length-1) {
+                    st = st + ch[i];
+                    i++;
+                    count++;
+                    break;
+                }
+                
+                st = st + ch[i];
+                i++;
+                count++;
+            }
+
+            System.out.println(st + " --> " + count);
+        }
+    }
+
+
     
     /////////////////////////////////////////////////////////////////////////////////////////
     ////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
@@ -558,11 +589,7 @@ public class StringMethods {
     }
 
 
-    //USED IN Q43
-    //To print the count of characters present in the each word
-    public static void countCharsPresentInTheWord(String str) {
-
-    }
+    
 
     
 

@@ -1,8 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////////////
-////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
-////            MAYBE DOESN'T WORK OR NOT NEEDED AT THE MOMENT                      /////
-/////////////////////////////////////////////////////////////////////////////////////////
-
 //Q43. WAJP to count how many Characters present in all the Words.
 
 import static StringMethods.StringMethods.*;
