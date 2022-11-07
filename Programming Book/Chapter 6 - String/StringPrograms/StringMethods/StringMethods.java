@@ -284,76 +284,76 @@ public class StringMethods {
     //USED IN Q28
     //To return after converting the first character of every word into capital and remaining small in string.
     public static String convertEveryWordsFirstCharacterToCapital(String str) { 
-        String string = "";
-        int count=0;
-
-        for(int i=0; i<str.length(); i++) {
-            char ch = str.charAt(i);
-
-            if(count==0) {
-                if(ch>='a' && ch<='z') {
-                    string = string + (char)(ch-32);
+        char[] ch = str.toCharArray();
+        
+        for(int i=0; i<ch.length; i++) {
+            if(i==0 && ch[i] != ' ' || ch[i] != ' ' && ch[i-1]==' ') {
+                if(ch[i]>='a' && ch[i]<='z') {
+                    ch[i] = (char) (ch[i]-32);
                 }
-                else {
-                    string = string + ch;
-                }
-                count++;
-            }
-            else {
-                if(ch==' ') {
-                    string = string + ch;
-                    count=0;
-                }
-                else {
-                    if(ch>='A' && ch<='Z') {
-                        string = string + (char)(ch+32);
-                    }
-                    else {
-                        string = string + ch;
-                    }
+                else if(ch[i]>='A' && ch[i]<='Z'){
+                    ch[i] = (char) (ch[i]+32);                    
                 }
             }
         }
-        
-        return string;
+        return new String(ch);
     }
 
 
     //USED IN Q29
     //To return after converting the first character of every word into small and remaining capital in string.
-    public static String convertEveryWordsFirstCharacterToSmall(String str) { 
-        String string = "";
-        int count=0;
+    public static String convertEveryWordsFirstCharacterToSmall(String str) {
+        char[] ch = str.toCharArray();
 
-        for(int i=0; i<str.length(); i++) {
-            char ch = str.charAt(i);
-
-            if(count==0) {
-                if(ch>='A' && ch<='Z') {
-                    string = string + (char)(ch+32);
+        for(int i=0; i<ch.length; i++) {
+            if(i==0 && ch[i]!=' ' || ch[i]!=' ' && ch[i-1]==' ') {
+                if(ch[i]>='A' && ch[i]<='Z') {
+                    ch[i] = (char) (ch[i]+32);
                 }
-                else {
-                    string = string + ch;
-                }
-                count++;
             }
-            else {
-                if(ch==' ') {
-                    string = string + ch;
-                    count=0;
-                }
-                else {
-                    if(ch>='a' && ch<='z') {
-                        string = string + (char)(ch-32);
-                    }
-                    else {
-                        string = string + ch;
-                    }
-                }
+            else if(ch[i]>='a' && ch[i]<='z') {
+                ch[i] = (char) (ch[i]-32);
             }
         }
-        
-        return string;
+        return new String(ch);
+    }
+
+
+    // USED IN Q30
+    // TO return the string after converting every words last character small and remaining capital.
+    public static String convertEveryWordsLastCharacterToSmall(String str) {
+        char[] ch = str.toCharArray();
+
+        for(int i=0; i<ch.length; i++) {
+            if(i==ch.length-1 && ch[i]!=' ' || ch[i]!=' ' && ch[i+1]==' ') {
+                if(ch[i]>='A' && ch[i]<='Z') {
+                    ch[i] = (char) (ch[i]+32);
+                }
+            }
+            else if(ch[i]>='a' && ch[i]<='z') {
+                ch[i] = (char) (ch[i]-32);
+            }
+        }
+        return new String(ch);
+    }
+
+
+    // USED IN Q31
+    // TO return the string after converting every words last character capital and remaining small.
+    public static String convertEveryWordsLastCharacterToCapital(String str) {
+        char[] ch = str.toCharArray();
+
+        for(int i=0; i<ch.length; i++) {
+            if(i==ch.length-1 && ch[i]!=' ' || ch[i]!=' ' && ch[i+1]==' ') {
+                if(ch[i]>='a' && ch[i]<='z') {
+                    ch[i] = (char) (ch[i]-32);
+                }
+            }
+            else if(ch[i]>='A' && ch[i]<='Z') {
+                ch[i] = (char) (ch[i]+32);
+            }
+        }
+        return new String(ch);
     }
 
 
@@ -371,6 +371,30 @@ public class StringMethods {
         }
 
         return sum;
+    }
+
+
+    //USED IN Q35
+    //To print the frequency of each character in given string
+    public static void countFrequencyOfCharacters(String str) {
+        int[] count = new int[26];
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch>='A' && ch<='Z') {
+                count[ch-65]++;
+            }
+            else if(ch>='a' && ch<='z') {
+                count[ch-97]++;
+            }
+        }
+
+        for(int i=0; i<count.length; i++) {
+            if(count[i] != 0) {
+                System.out.println((char)(i+65) + " --> " + count[i]);
+            }
+        }
     }
 
 
@@ -405,6 +429,20 @@ public class StringMethods {
     }
 
 
+    //USED IN Q38
+    //To return after swiping every words first character with the last character of same word in string
+    public static String swipeWordsFirstCharWithLastChar(String str) {
+        char[] ch = str.toCharArray();
+
+        for(int i=0; i<str.length(); i++) {
+            
+        }
+
+        return new String(ch);
+    }
+    
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////
 ////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
@@ -416,50 +454,104 @@ public class StringMethods {
 Hi, Stranger! 
 What are you doing here?
 You are not supposed to be here.
-This is a dangerous zone.
 You may find code here that doesn't work or is not needed at the moment.
-
-If you are here to help me or need my help, 
-Contact me at: 
-    Telegram: sandeep_patel07
 */
 
 
-    //USED IN Q29
-    //To return after converting the last character of every word into capital and remaining small in string.
-    public static String convertEveryWordsLastCharacterToSmall(String str) { 
-        String string = "";
-        int count=0;
 
-        for(int i=0; i<str.length(); i++) {
-            char ch = str.charAt(i);
 
-            if(count==0) {
+
+
+
+
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+/////////////////////////////////////////////////////////////////////////////////////////
+////                                2ND METHODS                                     /////
+////                      CAN BE USED INSTEAD OF CURRENT ONE                        /////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+CAN BE USED IN Q28 - LINE NO: 286
+To return after converting the first character of every word into capital and remaining small in string.
+public static String convertEveryWordsFirstCharacterToCapital(String str) { 
+    String string = "";
+    int count=0;
+
+    for(int i=0; i<str.length(); i++) {
+        char ch = str.charAt(i);
+
+        if(count==0) {
+            if(ch>='a' && ch<='z') {
+                string = string + (char)(ch-32);
+            }
+            else {
+                string = string + ch;
+            }
+            count++;
+        }
+        else {
+            if(ch==' ') {
+                string = string + ch;
+                count=0;
+            }
+            else {
                 if(ch>='A' && ch<='Z') {
                     string = string + (char)(ch+32);
                 }
                 else {
                     string = string + ch;
                 }
-                count++;
+            }
+        }
+    }
+
+    return string;
+}
+
+
+CAN BE USED IN Q29 - LINE NO: 305
+To return after converting the first character of every word into small and remaining capital in string.
+public static String convertEveryWordsFirstCharacterToSmall(String str) { 
+    String string = "";
+    int count=0;
+
+    for(int i=0; i<str.length(); i++) {
+        char ch = str.charAt(i);
+
+        if(count==0) {
+            if(ch>='A' && ch<='Z') {
+                string = string + (char)(ch+32);
             }
             else {
-                if(ch==' ') {
-                    string = string + ch;
-                    count=0;
+                string = string + ch;
+            }
+            count++;
+        }
+        else {
+            if(ch==' ') {
+                string = string + ch;
+                count=0;
+            }
+            else {
+                if(ch>='a' && ch<='z') {
+                    string = string + (char)(ch-32);
                 }
                 else {
-                    if(ch>='a' && ch<='z') {
-                        string = string + (char)(ch-32);
-                    }
-                    else {
-                        string = string + ch;
-                    }
+                    string = string + ch;
                 }
             }
         }
-        
-        return string;
     }
+
+    return string;
+}
+
+
+
+*/
 
 }

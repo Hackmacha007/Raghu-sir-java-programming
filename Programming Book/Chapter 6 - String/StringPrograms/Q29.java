@@ -1,4 +1,4 @@
-//Q29. WAJP to convert every words first character into small and remaining capital in string.
+//Q29. WAJP to convert Every Words First Character into Small and Remaining to Capital in string.
 
 import static StringMethods.StringMethods.*;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-//Q37. WAJP to convert all the uppercase letters to lowercase letters.
+//Q37. WAJP to check if the string is Palindrome or not.
 
 import static StringMethods.StringMethods.*;
 import java.util.Scanner;

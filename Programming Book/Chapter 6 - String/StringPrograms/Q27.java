@@ -1,4 +1,4 @@
-//Q27. WAJP to convert all the vowels to capital and remaining to small in string.
+//Q27. WAJP to convert all the Vowels to Capital and Remaining to Small in string.
 
 import static StringMethods.StringMethods.*;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-//Q36. WAJP to convert all the uppercase letters to lowercase letters.
+//Q36. WAJP to reverse the string.
 
 import static StringMethods.StringMethods.*;
 import java.util.Scanner;

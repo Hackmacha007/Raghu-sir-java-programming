@@ -1,4 +1,4 @@
-//Q33. WAJP to convert all the lowercase letters to uppercase letters.
+//Q33. WAJP to convert all the Lowercase Letters to Uppercase Letters.
 
 import static StringMethods.StringMethods.*;
 import java.util.Scanner;
