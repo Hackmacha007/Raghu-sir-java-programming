@@ -110,6 +110,7 @@ public class StringMethods {
 
         for(int i=0; i<str.length(); i++) {
             char ch = str.charAt(i);
+
             if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
                 count++;
             }
@@ -126,6 +127,7 @@ public class StringMethods {
         
         for(int i=0; i<str.length(); i++) {
             char ch = str.charAt(i);
+
             if(ch>='A' && ch<='Z') {
                 if(ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U') {
                     count++;
@@ -166,6 +168,7 @@ public class StringMethods {
 
         for(int i=0; i<str.length(); i++) {
             char ch = str.charAt(i);
+
             if(ch>=0 && ch<=47 || ch>=58 && ch<=64 || ch>=91 && ch<=96 || ch>=123 && ch<=127) {
                 count++;
             }
@@ -182,6 +185,7 @@ public class StringMethods {
 
         for(int i=0; i<str.length(); i++) {
             char ch = str.charAt(i);
+
             if(ch>='0' && ch<='9') {
                 count++;
             }
@@ -242,13 +246,11 @@ public class StringMethods {
             if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
                 string = string + (char)(ch+32);
             }
+            else if((ch>='a' && ch<='z') && ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
+                string = string + (char)(ch-32);
+            }
             else {
-                if((ch>='a' && ch<='z') && ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
-                    string = string + (char)(ch-32);
-                }
-                else {
-                    string = string + ch;
-                }
+                string = string + ch;
             }
         }
         
@@ -267,13 +269,11 @@ public class StringMethods {
             if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
                 string = string + (char)(ch-32);
             }
+            else if((ch>='A' && ch<='Z') && ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U') {
+                string = string + (char)(ch+32);
+            }
             else {
-                if((ch>='A' && ch<='Z') && ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U') {
-                    string = string + (char)(ch+32);
-                }
-                else {
-                    string = string + ch;
-                }
+                string = string + ch;
             }
         }
         
@@ -296,6 +296,7 @@ public class StringMethods {
                 }
             }
         }
+
         return new String(ch);
     }
 
@@ -315,6 +316,7 @@ public class StringMethods {
                 ch[i] = (char) (ch[i]-32);
             }
         }
+
         return new String(ch);
     }
 
@@ -334,6 +336,7 @@ public class StringMethods {
                 ch[i] = (char) (ch[i]-32);
             }
         }
+
         return new String(ch);
     }
 
@@ -353,6 +356,7 @@ public class StringMethods {
                 ch[i] = (char) (ch[i]+32);
             }
         }
+
         return new String(ch);
     }
 
@@ -435,7 +439,7 @@ public class StringMethods {
         char[] ch = str.toCharArray();
 
         for(int i=0; i<str.length(); i++) {
-
+            
         }
 
         return new String(ch);
@@ -549,9 +553,6 @@ public static String convertEveryWordsFirstCharacterToSmall(String str) {
 
     return string;
 }
-
-
-
 */
 
 }
