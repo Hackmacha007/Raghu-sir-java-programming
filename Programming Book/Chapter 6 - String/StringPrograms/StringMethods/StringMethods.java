@@ -435,7 +435,7 @@ public class StringMethods {
         char[] ch = str.toCharArray();
 
         for(int i=0; i<str.length(); i++) {
-            
+
         }
 
         return new String(ch);
@@ -444,18 +444,18 @@ public class StringMethods {
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////
-////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
-////            MAYBE DOESN'T WORK OR NOT NEEDED AT THE MOMENT                      /////
-/////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////
+    ////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
+    ////            MAYBE DOESN'T WORK OR NOT NEEDED AT THE MOMENT                      /////
+    /////////////////////////////////////////////////////////////////////////////////////////
 
 
-/*
-Hi, Stranger! 
-What are you doing here?
-You are not supposed to be here.
-You may find code here that doesn't work or is not needed at the moment.
-*/
+    /*
+    Hi, Stranger! 
+    What are you doing here?
+    You are not supposed to be here.
+    You may find code here that doesn't work or is not needed at the moment.
+    */
 
 
 
