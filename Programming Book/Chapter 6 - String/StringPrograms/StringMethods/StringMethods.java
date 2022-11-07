@@ -437,35 +437,134 @@ public class StringMethods {
     //To return after swiping every words first character with the last character of same word in string
     public static String swipeWordsFirstCharWithLastChar(String str) {
         char[] ch = str.toCharArray();
+        int t=0;
 
         for(int i=0; i<str.length(); i++) {
-            
+            if(i==0 && ch[i]!=' ' || ch[i]!=' ' && ch[i-1]==' ') {
+                t=i;
+            }    
+            else if(i==ch.length-1 && ch[i]!=' ' || ch[i]!=' ' && ch[i+1]==' ') {
+                char temp = ch[i];
+                ch[i] = ch[t];
+                ch[t] = temp;
+            }
         }
 
         return new String(ch);
     }
+
+
+    //USED IN Q39
+    //To return the count of words present in the string
+    public static int countWords(String str) {
+        char[] ch = str.toCharArray();
+        int count=0;
+
+        for(int i=0; i<ch.length; i++) {
+            if(i==0 && ch[i]!=' ' || ch[i]!=' ' && ch[i-1]==' ') {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    //USED IN Q40
+    //To return the frequency of each character in given string
+    public static int[] countFrequencyOfChars(String str) {
+        int[] count = new int[26];
+
+        for(int i=0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if(ch>='A' && ch<='Z') {
+                count[ch-65]++;
+            }
+            else if(ch>='a' && ch<='z') {
+                count[ch-97]++;
+            }
+        }
+
+        return count;
+    }
+    //To check if the string is Anagram or not - USED IN Q40
+    public static boolean isStringAnagram(String str1, String str2) {
+        int[] countStr1 = countFrequencyOfChars(str1);
+        int[] countStr2 = countFrequencyOfChars(str2);
+
+        for(int i=0; i<26; i++) {
+            if(countStr1[i] != countStr2[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
     
 
+    //USED IN Q41
+    //To return after reversing the word in the sentence
+    public static String reverseTheWordsOfString(String str) {
+        char[] ch = str.toCharArray();
+        String revString = "";
+
+        for(int i=0; i<ch.length; i++) {
+            int k=i;
+            while(i<ch.length && ch[i]!=' ') {
+                i++;
+            }
+
+            int j=i-1;
+            while(j>=k) {
+                revString = revString + ch[j];
+                j--;
+            }
+
+            if(i<ch.length) {
+                revString = revString + ch[i];
+            }
+        }
+
+        return revString;
+    }
 
 
+    
     /////////////////////////////////////////////////////////////////////////////////////////
     ////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
     ////            MAYBE DOESN'T WORK OR NOT NEEDED AT THE MOMENT                      /////
     /////////////////////////////////////////////////////////////////////////////////////////
-
-
+    
+    
     /*
     Hi, Stranger! 
     What are you doing here?
     You are not supposed to be here.
     You may find code here that doesn't work or is not needed at the moment.
     */
+    
+    //USED IN Q42
+    //To return the string after reversing the sentence
+    public static String reverseSentenceOfString(String str) {
+        String revString = "";
+        char[] ch = str.toCharArray();
+
+        for(int i=0; i<ch.length; i++) {
+
+        }
+
+        return revString;
+    }
 
 
+    //USED IN Q43
+    //To print the count of characters present in the each word
+    public static void countCharsPresentInTheWord(String str) {
 
+    }
 
-
-
+    
 
 
 
