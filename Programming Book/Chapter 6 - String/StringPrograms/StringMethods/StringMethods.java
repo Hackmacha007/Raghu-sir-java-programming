@@ -530,6 +530,34 @@ public class StringMethods {
     }
 
 
+    //USED IN Q42
+    //To return the string after reversing the sentence
+    public static String reverseSentenceOfString(String str) {
+        String revString = "";
+        char[] ch = str.toCharArray();
+
+        for(int i=ch.length-1; i>=0; i--) {
+            int k=i;
+
+            while(i>=0 && ch[i]!=' ') {
+                i--;
+            }
+
+            int j=i+1;
+            while(j<=k) {
+                revString = revString + ch[j];
+                j++;
+            }
+
+            if(i>=0) {
+                revString = revString + ch[i];
+            }
+        }
+
+        return revString;
+    }
+
+
     //USED IN Q43
     //To print the count of characters present in the each word
     public static void countCharsPresentInTheWord(String str) {
@@ -561,43 +589,7 @@ public class StringMethods {
     }
 
 
-    
-    /////////////////////////////////////////////////////////////////////////////////////////
-    ////                    DANGER ZONE - CODE BELOW THIS LINE                          /////
-    ////            MAYBE DOESN'T WORK OR NOT NEEDED AT THE MOMENT                      /////
-    /////////////////////////////////////////////////////////////////////////////////////////
-    
-    
-    /*
-    Hi, Stranger! 
-    What are you doing here?
-    You are not supposed to be here.
-    You may find code here that doesn't work or is not needed at the moment.
-    */
-    
-    //USED IN Q42
-    //To return the string after reversing the sentence
-    public static String reverseSentenceOfString(String str) {
-        String revString = "";
-        char[] ch = str.toCharArray();
-
-        for(int i=0; i<ch.length; i++) {
-
-        }
-
-        return revString;
-    }
-
-
-    
-
-    
-
-
-
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 /////////////////////////////////////////////////////////////////////////////////////////
 ////                                2ND METHODS                                     /////
