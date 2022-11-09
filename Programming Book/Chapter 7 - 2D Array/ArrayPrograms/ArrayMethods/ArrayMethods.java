@@ -101,4 +101,66 @@ public class ArrayMethods {
         System.out.println("Even count: " + evenCount);
         System.out.println("Odd count: " + oddCount);
     }
+
+
+    //USED IN Q8
+    //To add and return the elements of matrix
+    public static int sumOfMatrixElements(int[][] matrix) {
+        int sum=0;
+
+        for(int i=0; i<matrix.length; i++) {
+            for(int j=0; j<matrix[i].length; j++) {
+                sum = sum + matrix[i][j];
+            }
+        }
+
+        return sum;
+    }
+
+
+    
+    
+    
+    
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    ////                            DANGER ZONE                                   ////
+    ////            CODE BELOW THIS LINE MAY NOT WORK OR IN PROGRESS              ////
+    //////////////////////////////////////////////////////////////////////////////////
+    
+    //USED IN Q7
+    //To add and return the elements of two matrices
+    public static int[][] multiplyTwoMatrices(int[][] mat1, int[][] mat2) {
+        int[][] matrix = new int[mat1.length][mat1[0].length];
+
+        for(int i=0; i<matrix.length; i++) {
+            for(int j=0; j<matrix[i].length; j++) {
+                matrix[i][j] = mat1[i][j] * mat2[i][j];
+            }
+        }
+
+        return matrix;
+    }
+
+    
+    //USED IN Q9
+    private static boolean isPrime(int n) {
+        for(int i=2; i<=n/2; i++) {
+            if(n%i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    //USED IN Q9
+    //To print the prime numbers present in the matrix
+    public static void printPrimeInMatrix(int[][] matrix) {
+        for(int i=0; i<matrix.length; i++) {
+            for(int j=0; j<matrix[i].length; j++) {
+                if(isPrime(matrix[i][j])) {
+                    System.out.print(matrix[i][j] + " ");
+                }
+            }
+        }
+    }
 }
