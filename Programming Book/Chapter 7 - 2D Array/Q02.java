@@ -1,6 +1,6 @@
 //Q2. WAJP to find Biggest Element in the Matrix.
 
-public class Q2 extends ArrayMethods{
+public class Q02 extends ArrayMethods{
     private static int getBiggestElement(int[][] matrix) {
         int biggest = matrix[0][0];
 

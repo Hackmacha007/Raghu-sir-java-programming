@@ -1,6 +1,6 @@
 //Q8. WAJP to calculate the Sum of the Matrix element and print it.
 
-public class Q8 extends ArrayMethods{
+public class Q08 extends ArrayMethods{
     private static int sumOfMatrixElements(int[][] matrix) {
         int sum=0;
 

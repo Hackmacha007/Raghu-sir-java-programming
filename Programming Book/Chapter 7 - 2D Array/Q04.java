@@ -1,6 +1,6 @@
 //Q4. WAJP to perform Arithmetic Division Operation on Matrix and store the Remainder(or 0) into new matrix and display it.
 
-public class Q4 extends ArrayMethods{
+public class Q04 extends ArrayMethods{
     private static int[][] divideElementsByUserValue(int[][] mat, int divisor) {
         int[][] matrix = new int[mat.length][mat[0].length];
 

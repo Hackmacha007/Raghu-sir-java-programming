@@ -1,6 +1,6 @@
 //Q3. WAJP to Add the Elements of Two Matrix.
 
-public class Q3 extends ArrayMethods{
+public class Q03 extends ArrayMethods{
     private static int[][] sumTwoMatrices(int[][] mat1, int[][] mat2) {
         int[][] matrix = new int[mat1.length][mat1[0].length];
 

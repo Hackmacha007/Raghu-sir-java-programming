@@ -1,6 +1,6 @@
 //Q6. WAJP to Display the Frequency of Even and Odd numbers from matrix.
 
-public class Q6 extends ArrayMethods{
+public class Q06 extends ArrayMethods{
     private static void countOfEvenOdd(int[][] matrix) {
         int evenCount=0, oddCount=0;
         

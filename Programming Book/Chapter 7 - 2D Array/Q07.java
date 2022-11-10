@@ -1,6 +1,6 @@
 //Q7. WAJP to Multiply Two Matrices.
 
-public class Q7 extends ArrayMethods{ 
+public class Q07 extends ArrayMethods{ 
     private static int[][] multiplyTwoMatrices(int[][] mat1, int[][] mat2) {
         int[][] matrix = new int[mat1.length][mat1[0].length];
         //Need to write the logic

@@ -1,6 +1,6 @@
 //Q9. WAJP to print the Prime Numbers present in the Matrix.
 
-public class Q9 extends ArrayMethods{ 
+public class Q09 extends ArrayMethods{ 
     private static void printPrimeInMatrix(int[][] matrix) {
         for(int i=0; i<matrix.length; i++) {
             for(int j=0; j<matrix[i].length; j++) {
