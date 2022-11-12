@@ -405,14 +405,15 @@ public class StringMethods {
     //USED IN Q36
     //To return the reversed string.
     public static String reverseString(String str) {
-        String revString = "";
+        char[] ch = str.toCharArray();
 
-        for(int i=str.length()-1; i>=0; i--) {
-            char ch = str.charAt(i);
-            revString = revString + ch;
+        for(int i=0; i<=ch.length/2; i++) {
+            char temp = ch[i];
+            ch[i] = ch[ch.length-1-i];
+            ch[ch.length-1-i] = temp;
         }
 
-        return revString;
+        return new String(ch);
     }
   
 
