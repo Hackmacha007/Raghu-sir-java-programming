@@ -1,6 +1,6 @@
 //Q20. WAJP to count how many Letters and Digits present in the string.
 
-public class Q20 extends StringMethods {
+public class Q20 extends ScObject {
     private static void countLettersDigits(String str) {
         int lc=0, dc=0;
 

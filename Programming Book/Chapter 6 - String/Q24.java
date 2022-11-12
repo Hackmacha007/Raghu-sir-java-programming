@@ -1,6 +1,6 @@
 //Q24. WAJP to convert the String to LowerCase.
 
-public class Q24 extends StringMethods {
+public class Q24 extends ScObject {
     private static String convertToLowercase(String str) {
         char[] ch = str.toCharArray();
        

@@ -1,6 +1,6 @@
 //Q15. WAJP to count how many Capital Letters, Small Letters and Special Characters present in the string.
 
-public class Q15 extends StringMethods {
+public class Q15 extends ScObject {
     private static void countCapitalSmallLettersSpecialChars(String str) {
         int clc=0, slc=0, scc=0;
 

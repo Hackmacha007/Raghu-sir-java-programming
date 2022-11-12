@@ -1,6 +1,6 @@
 //Q8. WAJP to count how many Capital Vowels and Capital Consonants present in the String.
 
-public class Q08 extends StringMethods {
+public class Q08 extends ScObject {
     private static void countCapitalVowelsConsonants(String str) {
         int cvc=0, ccc=0;
 

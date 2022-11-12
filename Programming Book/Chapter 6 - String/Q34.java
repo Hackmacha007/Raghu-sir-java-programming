@@ -1,14 +1,22 @@
 //Q34. WAJP to convert all the Uppercase Letters to Lowercase Letters.
 
-import static StringMethods.StringMethods.*;
-import java.util.Scanner;
-public class Q34 {
+public class Q34 extends ScObject {
+    private static String convertToLowercase(String str) {
+        char[] ch = str.toCharArray();
+       
+        for(int i=0; i<ch.length; i++) {
+            if(ch[i]>='A' && ch[i]<='Z') {
+                ch[i] = (char)(ch[i] + 32);
+            }
+        }
+
+        return new String(ch);
+    }
+    
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string: ");
         String st = sc.nextLine();
-        sc.close();
-        
-        System.out.println("Sum of digits of string: " + convertToLowercase(st));
+
+        System.out.println(convertToLowercase(st));
     }
 }

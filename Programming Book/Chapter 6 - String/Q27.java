@@ -1,6 +1,6 @@
 //Q27. WAJP to convert all the Vowels to Capital and Remaining to Small in string.
 
-public class Q27 extends StringMethods {
+public class Q27 extends ScObject {
     private static String convertVowelsToCapitalRemSmall(String str) {
         char[] ch = str.toCharArray();
        

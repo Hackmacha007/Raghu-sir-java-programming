@@ -1,6 +1,6 @@
 //Q1. WAJP to count how many Capital letters present in the String.
 
-public class Q01 extends StringMethods {
+public class Q01 extends ScObject {
     private static int countCapitalLetters(String str) {
         int count=0;
 

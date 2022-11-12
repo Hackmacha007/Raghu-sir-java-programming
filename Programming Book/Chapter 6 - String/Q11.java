@@ -1,6 +1,6 @@
 //Q11. WAJP to count how many Capital Vowels and Small Consonants present in the String.
 
-public class Q11 extends StringMethods {
+public class Q11 extends ScObject {
     private static void countCapitalVowelsSmallConsonants(String str) {
         int cvc=0, scc=0;
 

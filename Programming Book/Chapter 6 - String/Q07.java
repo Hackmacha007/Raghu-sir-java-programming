@@ -1,6 +1,6 @@
 //Q7. WAJP to count how many Vowels and Consonants present in the String.
 
-public class Q07 extends StringMethods {
+public class Q07 extends ScObject {
     private static void countVowelsConsonants(String str) {
         int vc=0, cc=0;
 

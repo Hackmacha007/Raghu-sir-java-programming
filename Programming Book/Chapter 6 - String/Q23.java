@@ -1,6 +1,6 @@
 //Q23. WAJP to count how many Small Letters, Special Characters and Digits present in the string.
 
-public class Q23 extends StringMethods {
+public class Q23 extends ScObject {
     private static void countSmallLettersSpecialCharsDigits(String str) {
         int slc=0, scc=0, dc=0;
 

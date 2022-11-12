@@ -1,6 +1,6 @@
 //Q3. WAJP to count how many Small letters present in the String.
 
-public class Q03 extends StringMethods {
+public class Q03 extends ScObject {
     private static int countSmallLetters(String str) {
         int count=0;
 

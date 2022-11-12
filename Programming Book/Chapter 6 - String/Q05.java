@@ -1,6 +1,6 @@
 //Q5. WAJP to count how many Small Vowels present in the String.
 
-public class Q05 extends StringMethods {
+public class Q05 extends ScObject {
     private static int countSmallVowels(String str) {
         int count=0;
 

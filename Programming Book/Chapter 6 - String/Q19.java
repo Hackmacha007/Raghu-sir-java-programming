@@ -1,6 +1,6 @@
 //Q19. WAJP to count how many Small Vowels, Small Consonants and Special Characters present in the string.
 
-public class Q19 extends StringMethods {
+public class Q19 extends ScObject {
     private static void countSmallVowelsConsonantsSpecialChars(String str) {
         int svc=0, scc=0, sc=0;
 

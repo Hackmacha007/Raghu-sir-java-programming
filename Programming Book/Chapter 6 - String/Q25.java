@@ -1,6 +1,6 @@
 //Q25. WAJP to convert the String to UpperCase.
 
-public class Q25 extends StringMethods {
+public class Q25 extends ScObject {
     private static String convertToUppercase(String str) {
         char[] ch = str.toCharArray();
        

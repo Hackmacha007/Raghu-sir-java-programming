@@ -1,6 +1,6 @@
 //Q21. WAJP to count how many Special Characters and Digits present in the string.
 
-public class Q21 extends StringMethods {
+public class Q21 extends ScObject {
     private static void countDigitsSpecialChars(String str) {
         int scc=0, dc=0;
 

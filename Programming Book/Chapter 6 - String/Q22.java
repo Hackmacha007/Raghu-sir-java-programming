@@ -1,6 +1,6 @@
 //Q22. WAJP to count how many Capital Letters, Special Characters and Digits present in the string.
 
-public class Q22 extends StringMethods {
+public class Q22 extends ScObject {
     private static void countCapitalLettersSpecialCharsDigits(String str) {
         int clc=0, scc=0, dc=0;
 

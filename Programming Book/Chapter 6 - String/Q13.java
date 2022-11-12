@@ -1,6 +1,6 @@
 //Q13. WAJP to count how many Small Letters and Special Characters present in the string.
 
-public class Q13 extends StringMethods {
+public class Q13 extends ScObject {
     private static void countSmallLettersSpecialChars(String str) {
         int slc=0, scc=0;
 
