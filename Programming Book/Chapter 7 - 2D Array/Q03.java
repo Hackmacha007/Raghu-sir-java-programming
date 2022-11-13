@@ -9,7 +9,6 @@ public class Q03 extends ArrayMethods{
                 matrix[i][j] = mat1[i][j] + mat2[i][j];
             }
         }
-
         return matrix;
     }
 

@@ -8,8 +8,7 @@ public class Q15 extends ArrayMethods {
                     return false;
                 }
             }
-        }
-        
+        } 
         return true;
     }
 

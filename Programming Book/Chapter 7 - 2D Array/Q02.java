@@ -11,7 +11,6 @@ public class Q02 extends ArrayMethods{
                 }
             }
         }
-
         return biggest;
     }
     

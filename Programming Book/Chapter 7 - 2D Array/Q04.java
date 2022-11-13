@@ -9,7 +9,6 @@ public class Q04 extends ArrayMethods{
                 matrix[i][j] = mat[i][j] % divisor;
             }
         }
-
         return matrix;
     }
     

@@ -9,7 +9,6 @@ public class Q08 extends ArrayMethods{
                 sum = sum + matrix[i][j];
             }
         }
-
         return sum;
     }
     

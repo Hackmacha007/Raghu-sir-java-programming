@@ -9,7 +9,6 @@ public class Q12 extends ArrayMethods {
                 mat[i][j] = matrix[j][i]; 
             }
         }
-
         return mat;
     }
 
