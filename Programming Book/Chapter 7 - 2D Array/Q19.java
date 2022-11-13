@@ -19,6 +19,7 @@ public class Q19 extends ArrayMethods {
         }
         return matrix;
     }
+    
 
     //To convert the matrix into array
     private static int[] convertMatrixToArray(int[][] mat) {
