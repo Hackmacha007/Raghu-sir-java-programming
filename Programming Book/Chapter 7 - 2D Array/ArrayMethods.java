@@ -11,7 +11,7 @@ public class ArrayMethods {
 
         int[][] matrix = new int[rows][columns];
         
-        System.out.println("Enter the elements of matrix: ");
+        System.out.println("\nEnter the elements of matrix: ");
         for (int i=0; i<matrix.length; i++) {
             for (int j=0; j<matrix[i].length; j++) {
                 matrix[i][j] = sc.nextInt();
