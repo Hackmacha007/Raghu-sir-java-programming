@@ -1,7 +1,7 @@
 //Q19. WAJP to Sort the Matrix in Ascending order and Descending order.
 
 public class Q19 extends ArrayMethods {
-    private static int row=0, col=0;
+    private static int row, col;
 
     //To read the matrix from the user
     private static int[][] readMat() {
