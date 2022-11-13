@@ -1,4 +1,4 @@
-//Q10. WAJP to determine wheteher a user entered matrix is Identity Matrix or not.
+//Q10. WAJP to determine whether a user entered matrix is Identity Matrix or not.
 
 public class Q10 extends ArrayMethods { 
     private static boolean identityMatrixCheck() {
