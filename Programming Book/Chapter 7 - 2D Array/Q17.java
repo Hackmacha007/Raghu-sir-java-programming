@@ -14,7 +14,7 @@ public class Q17 extends ArrayMethods {
         } 
 
         //Creating an array of size maxValue+1
-        int arr[] = new int [maxValue + 1]; 
+        int arr[] = new int[maxValue + 1]; 
 
         for(int i=0; i<matrix.length; i++) { 
             for(int j=0; j<matrix[i].length; j++) {
