@@ -1,5 +1,14 @@
 //Q16. WAJP to find Unique Elements Common to all Rows in Matrix.
 
+/* 
+Logic - How i will do it?
+1. Create an array and store the first-row elements inside it.
+2. Then get the maximum value from above array, create one array of maxValue+1 size.
+3. Then check if the first-row elements are present in the matrix, if yes then increase
+    the count in maxValue+1 size array and break after increasing the count.
+4. Check if the count of array element is matrix-1 length then print it.
+*/
+
 public class Q16 extends ArrayMethods {
     private static void printDistinctElementsCommonToRows(int[][] matrix) {
         int[] firstRow = new int[matrix[0].length];
