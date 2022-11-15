@@ -2,37 +2,35 @@
 
 public class Q21 extends ArrayMethods {
     private static void traverseInZigZag(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
+        int x, y;
 
-        for (int i=0; i<n+m-1; i++) {
-            int x=0, y=0;
-            if (i%2 == 1) {
-                // down left
-                if(i<n) {
-                    x = 0;
-                    y = i;
-                }
-                else {
-                    x = i-n+1;
-                    y = n-1;
-                }
-                while (x<m && y>=0) {
-                    System.out.print(matrix[x++][y--] + " ");
-                }
-            } 
-            else {
+        for (int i=0; i<matrix[0].length+matrix.length-1; i++) {
+            if (i%2 == 0) { 
                 // up right
-                if(i<m) {
+                if(i < matrix.length) {
                     x = i;
                     y = 0;
                 }
                 else {
-                    x = m-1;
-                    y = i-m+1;
+                    x = matrix.length-1;
+                    y = i-matrix.length+1;
                 }
-                while (x>=0 && y<n) {
+                while (x>=0 && y<matrix[0].length) {
                     System.out.print(matrix[x--][y++] + " ");
+                }  
+            } 
+            else {
+                // down left
+                if(i < matrix[0].length) {
+                    x = 0;
+                    y = i;
+                }
+                else {
+                    x = i-matrix[0].length+1;
+                    y = matrix[0].length-1;
+                }
+                while (x<matrix.length && y>=0) {
+                    System.out.print(matrix[x++][y--] + " ");
                 }
             }
         }
