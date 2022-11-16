@@ -6,21 +6,22 @@ public class Q10 {
         if(n>100) {
             return false;
         }
+        else if(n%2!=0) {
+            return true;
+        }
         else {
-            if(n%2!=0) {
-                return true;
-            }
             return false;
         }
     }
 
     private static int oddCount(int[] arr) {
-       int count=0;
-       for(int i=0; i<arr.length; i++) {
+        int count=0;
+        
+        for(int i=0; i<arr.length; i++) {
             if(isOdd(arr[i])) {
                 count++;
             }
-        }
+        } 
         return count;
     }
 

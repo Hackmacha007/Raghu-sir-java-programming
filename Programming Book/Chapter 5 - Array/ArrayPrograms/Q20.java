@@ -3,12 +3,11 @@
 import static ArrayMethods.ArrayMethods.*;
 public class Q20 {
     private static boolean isPalindrome(int n) {
-
         if(n>=1000 || n<=100) {
             return false;
         }
         else {
-            int rev = 0, temp=n;
+            int rev = 0, temp = n;
 
             do {
                 int ld = n%10;
@@ -22,6 +21,7 @@ public class Q20 {
 
     private static int palindromeCount(int[] arr) {
         int count=0;
+
         for(int i=0; i<arr.length; i++) {
             if(isPalindrome(arr[i])) {
                 count++;

@@ -15,8 +15,9 @@ public class Q18 {
     }
 
     private static int evenCount(int[] arr) {
-       int count=0;
-       for(int i=0; i<arr.length; i++) {
+        int count=0;
+        
+        for(int i=0; i<arr.length; i++) {
             if(isEven(arr[i])) {
                 count++;
             }

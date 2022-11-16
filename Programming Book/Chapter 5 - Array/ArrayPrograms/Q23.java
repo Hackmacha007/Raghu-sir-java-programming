@@ -1,10 +1,7 @@
 //Q23. Write a java program to define a method to insert the element in the specified index.
 
 import static ArrayMethods.ArrayMethods.*;
-import java.util.Scanner;
-
 public class Q23 {  
-    private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int [] array = readArray();
 

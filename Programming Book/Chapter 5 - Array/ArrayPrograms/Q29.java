@@ -3,7 +3,6 @@
 import static ArrayMethods.ArrayMethods.*;
 public class Q29 {
     public static void main(String[] args) {
-        
         int [] array = readArray();
 
         System.out.println("Magic values in array: ");

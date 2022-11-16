@@ -6,17 +6,18 @@ public class Q11 {
         if(n>100) {
             return false;
         }
+        else if(n%2==0) {
+            return true;
+        }
         else {
-            if(n%2==0) {
-                return true;
-            }
             return false;
         }
     }
 
     private static int evenCount(int[] arr) {
-       int count=0;
-       for(int i=0; i<arr.length; i++) {
+        int count=0;
+
+        for(int i=0; i<arr.length; i++) {
             if(isEven(arr[i])) {
                 count++;
             }

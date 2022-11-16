@@ -2,7 +2,7 @@ package ArrayMethods;
 import java.util.Scanner;
 
 public class ArrayMethods {
-    private static Scanner sc = new Scanner(System.in);
+    public static Scanner sc = new Scanner(System.in);
 
     //To print the array
     public static void printArray(int[] array) {
@@ -27,16 +27,31 @@ public class ArrayMethods {
     }
 
 
-    //USED IN Q21
-    //To reverse the array
-    public static int[] reverseArray(int[] array) {
-        int[] reverseArray = new int [array.length];
+    //USED IN Q02
+    //to get the sum of all the elements of the array
+    public static int getSum(int[] array) {
+        int sum = 0;
 
         for(int i=0; i<array.length; i++) {
-            reverseArray[i] = array[array.length-1-i];
+            sum += array[i];
         }
 
-        return reverseArray;
+        return sum;
+    }
+
+    
+    //USED IN Q03, Q35
+    //To get minimum/lowest/smallest element of array
+    public static int getSmallest(int[] array) {
+        int smallestValue = array[0];
+
+        for(int i=0; i<array.length; i++) {
+            if(smallestValue > array[i]) {
+                smallestValue = array[i];
+            }
+        }
+
+        return smallestValue;
     }
 
 
@@ -55,33 +70,6 @@ public class ArrayMethods {
     }
 
 
-    //USED IN Q03, Q35
-    //To get minimum/lowest/smallest element of array
-    public static int getSmallest(int[] array) {
-        int smallestValue = array[0];
-
-        for(int i=0; i<array.length; i++) {
-            if(smallestValue > array[i]) {
-                smallestValue = array[i];
-            }
-        }
-
-        return smallestValue;
-    }
-
-
-    //To get the sum of all elements of array
-    public static int getSum(int[] array) {
-        int sum=0;
-
-        for(int i=0; i<array.length; i++) {
-            sum = sum + array[i];
-        }
-
-        return sum;
-    }
-
-
     //USED IN Q05
     //To get the average of all elements of array
     public static double getAverage(int[] array) {
@@ -92,6 +80,19 @@ public class ArrayMethods {
         }
         
         return (double)sum/array.length;
+    }
+
+
+    //USED IN Q21
+    //To reverse the array
+    public static int[] reverseArray(int[] array) {
+        int[] reverseArray = new int [array.length];
+
+        for(int i=0; i<array.length; i++) {
+            reverseArray[i] = array[array.length-1-i];
+        }
+
+        return reverseArray;
     }
 
 
@@ -162,52 +163,6 @@ public class ArrayMethods {
     }
     
 
-    //USED IN Q27
-    //To merge two sorted array into one array in sorted format
-    public static int[] mergeSortedArray(int[] firArray, int[] secArray) {
-        int[] mergedArray = new int[firArray.length+secArray.length];
-        int i=0, j=0, k=0;
-
-        while(i<firArray.length && j<secArray.length) {
-            if(firArray[i] < secArray[j]) {
-                mergedArray[k++] = firArray[i++];
-            }
-            else {
-                mergedArray[k++] = secArray[j++];
-            }
-        }
-        while(i<firArray.length) {
-            mergedArray[k++] = firArray[i++];
-        }
-        while(i<secArray.length) {
-            mergedArray[k++] = secArray[j++];
-        }
-
-        return mergedArray;
-    }
-
-
-    //USED IN Q26, Q36
-    //To merge two array in zigzag order
-    public static int[] mergeArrayZigZagOrder(int[] firArray, int[] secArray) {
-        int[] mergedArray = new int[firArray.length+secArray.length];
-        int i=0, j=0;
-
-        while(i<firArray.length && i<secArray.length) {
-            mergedArray[j++] = firArray[i];
-            mergedArray[j++] = secArray[i++];
-        }
-        while(i<firArray.length) {
-            mergedArray[j++] = firArray[i++];
-        }
-        while(i<secArray.length) {
-            mergedArray[j++] = secArray[i++];
-        }
-
-        return mergedArray;
-    }
-
-
     //USED IN Q25
     //To insert a element at specified index in array
     public static int[] insertArrayAtIndex(int[] array, int[] secArray, int index) {
@@ -234,6 +189,107 @@ public class ArrayMethods {
         }
 
         return newArray;
+    }
+
+
+    //USED IN Q26, Q36
+    //To merge two array in zigzag order
+    public static int[] mergeArrayZigZagOrder(int[] firArray, int[] secArray) {
+        int[] mergedArray = new int[firArray.length+secArray.length];
+        int i=0, j=0;
+
+        while(i<firArray.length && i<secArray.length) {
+            mergedArray[j++] = firArray[i];
+            mergedArray[j++] = secArray[i++];
+        }
+        while(i<firArray.length) {
+            mergedArray[j++] = firArray[i++];
+        }
+        while(i<secArray.length) {
+            mergedArray[j++] = secArray[i++];
+        }
+
+        return mergedArray;
+    }
+
+
+    //USED IN Q27
+    //To merge two sorted array into one array in sorted format
+    public static int[] mergeSortedArray(int[] firArray, int[] secArray) {
+        int[] mergedArray = new int[firArray.length+secArray.length];
+        int i=0, j=0, k=0;
+
+        while(i<firArray.length && j<secArray.length) {
+            if(firArray[i] < secArray[j]) {
+                mergedArray[k++] = firArray[i++];
+            }
+            else {
+                mergedArray[k++] = secArray[j++];
+            }
+        }
+        while(i<firArray.length) {
+            mergedArray[k++] = firArray[i++];
+        }
+        while(i<secArray.length) {
+            mergedArray[k++] = secArray[j++];
+        }
+
+        return mergedArray;
+    }
+
+
+    //USED IN Q28
+    //To print the common elements between two arrays
+    public static void printCommonElements(int[] firArray, int[] secArray) {
+        for(int i=0; i<firArray.length; i++) {
+            for(int j=0; j<secArray.length; j++) {
+                if(firArray[i] == secArray[j]) {
+                    System.out.print(firArray[i]+" ");
+                }
+            }
+        }        
+    }
+
+
+    //USED IN Q29
+    //To print the magic values from the array
+    public static void printMagicValues(int[] array) {
+        for(int i=0; i<array.length; i++) {
+            int temp=array[i];
+
+            while(temp>9) {
+                int sum=0;
+                while(temp!=0) {
+                    int ld = temp%10;
+                    sum = sum+ld;
+                    temp /= 10;
+                }
+                temp=sum;   
+            }
+            if(temp==1) {
+                System.out.print(array[i] + " ");
+            }
+        }
+    }
+
+
+    //USED IN Q30
+    //To print the frequency of array elements
+    public static void printFrequency(int[] array) {
+        boolean[] arr = new boolean[array.length];
+
+        for(int i=0; i<array.length; i++) {
+            if(arr[i] == false) {
+                int count=1;
+                for(int j=i+1; j<array.length; j++) {
+                    if(array[i] == array[j]) {
+                        count++;
+                        arr[j] = true;
+                    }
+                }
+                System.out.println(array[i] + " Present -> " + count);
+            }
+        }
     }
 
 
@@ -269,6 +325,23 @@ public class ArrayMethods {
     }
 
 
+    //USED IN Q34
+    //To return a array by removing the duplicates values
+    public static int[] removeDuplicates(int[] array) {
+        int[] newArray = array;
+
+        for(int i=0; i<newArray.length; i++) {
+            for(int j=i+1; j<newArray.length; j++) {
+                if(newArray[i] == newArray[j]) {
+                    newArray = deleteAtIndex(newArray, j);
+                }
+            }
+        }
+
+        return newArray;
+    } 
+
+
     //USED IN Q37
     //To count the even numbers elements present in array
     public static int evenCountInArray(int[] array) {
@@ -282,8 +355,6 @@ public class ArrayMethods {
 
         return count;
     }
-
-
     //USED IN Q37
     //To count the even numbers elements present in array
     public static int oddCountInArray(int[] array) {
@@ -328,77 +399,5 @@ public class ArrayMethods {
         }
 
         return oddArray;
-    }
-
-
-    //USED IN Q30
-    //To print the frequency of array elements
-    public static void printFrequency(int[] array) {
-        boolean[] arr = new boolean[array.length];
-
-        for(int i=0; i<array.length; i++) {
-            if(arr[i] == false) {
-                int count=1;
-                for(int j=i+1; j<array.length; j++) {
-                    if(array[i] == array[j]) {
-                        count++;
-                        arr[j] = true;
-                    }
-                }
-                System.out.println(array[i] + " Present -> " + count);
-            }
-        }
-    }
-
-
-    //USED IN 28
-    //To print the common elements between two arrays
-    public static void printCommonElements(int[] firArray, int[] secArray) {
-        for(int i=0; i<firArray.length; i++) {
-            for(int j=0; j<secArray.length; j++) {
-                if(firArray[i] == secArray[j]) {
-                    System.out.print(firArray[i]+" ");
-                }
-            }
-        }        
-    }
-
-
-    //USED IN Q29
-    //To print the magic values from the array
-    public static void printMagicValues(int[] array) {
-        for(int i=0; i<array.length; i++) {
-            int temp=array[i];
-
-            while(temp>9) {
-                int sum=0;
-                while(temp!=0) {
-                    int ld = temp%10;
-                    sum = sum+ld;
-                    temp /= 10;
-                }
-                temp=sum;   
-            }
-            if(temp==1) {
-                System.out.print(array[i] + " ");
-            }
-        }
-    }
-
-    
-    //USED IN Q34
-    //To return a array by removing the duplicates values
-    public static int[] removeDuplicates(int[] array) {
-        int[] newArray = array;
-
-        for(int i=0; i<newArray.length; i++) {
-            for(int j=i+1; j<newArray.length; j++) {
-                if(newArray[i] == newArray[j]) {
-                    newArray = deleteAtIndex(newArray, j);
-                }
-            }
-        }
-
-        return newArray;
-    } 
+    }  
 }
