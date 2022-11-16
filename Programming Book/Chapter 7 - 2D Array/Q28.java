@@ -1,7 +1,7 @@
 //Q28. WAJP to find maximum value of M[c][d]-M[a][b] over all choices of indexes.
 
 public class Q28 extends ArrayMethods {
-    public static int findMax(int[][] mat) {
+    private static int findMax(int[][] mat) {
         int n = mat.length;
 
         // tempMat [i][j] stores a maximum of elements in the matrix
