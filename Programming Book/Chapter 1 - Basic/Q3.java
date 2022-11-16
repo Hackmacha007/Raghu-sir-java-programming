@@ -7,7 +7,6 @@ public class Q3 {
         System.out.print("Enter the length and breadth of rectangle: ");
         double l = sc.nextDouble();
         double b = sc.nextDouble();
-
         sc.close();
 
         System.out.println("Area: "+(l*b));

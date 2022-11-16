@@ -7,7 +7,6 @@ public class Q6 {
         System.out.print("Enter two integer values: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
-
         sc.close();
 
         System.out.println("Addition: "+(a+b));

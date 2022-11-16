@@ -6,7 +6,6 @@ public class Q2 {
 
         System.out.print("Enter the radius of the circle: ");
         double r = sc.nextDouble();
-
         sc.close();
 
         System.out.println("Area: " + (3.1415 * r * r));

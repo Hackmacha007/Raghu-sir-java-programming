@@ -6,7 +6,6 @@ public class Q4 {
 
         System.out.print("Enter the side of the Square: ");
         double s = sc.nextDouble();
-
         sc.close();
 
         System.out.println("Area: "+(s*s));

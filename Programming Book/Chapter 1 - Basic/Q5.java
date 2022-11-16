@@ -6,7 +6,6 @@ public class Q5 {
 
         System.out.print("Enter the length of the Pipe in centimeters: ");
         double l = sc.nextDouble();
-
         sc.close();
 
         System.out.println("In Meter: "+(l/100.0)+" meter");
