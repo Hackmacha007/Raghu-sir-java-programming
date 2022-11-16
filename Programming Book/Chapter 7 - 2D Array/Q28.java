@@ -48,7 +48,6 @@ public class Q28 extends ArrayMethods {
                 tempMat[i][j] = Math.max(mat[i][j], Math.max(tempMat[i][j+1], tempMat[i+1][j]));
             }
         }
-        printMatrix(tempMat);
         return max;
     }
 
