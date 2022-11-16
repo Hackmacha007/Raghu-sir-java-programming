@@ -1,4 +1,4 @@
-//Q19. WAJP to Sort the Matrix in Ascending order and Descending order.
+//Q18. WAJP to print a matrix in counter clock-wise spiral form.
 
 public class Q18 extends ArrayMethods {
     private static void counterClockSpiralPrint(int mat[][]) {
