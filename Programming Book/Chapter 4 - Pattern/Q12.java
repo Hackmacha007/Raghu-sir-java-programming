@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Q12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the number of lines: ");
         int n = sc.nextInt();
         sc.close();
@@ -22,6 +23,7 @@ public class Q12 {
             for(int k=i; k>=1; k--) {
                 System.out.print(k+" ");
             }
+            
             System.out.println();
         }
     }

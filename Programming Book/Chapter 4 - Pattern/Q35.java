@@ -39,6 +39,7 @@ public class Q35 {
                 sp++;
                 st=st-2;
             }
+            
             System.out.println();
         }
     }
