@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Q34{
+public class Q34_Xylem{
     private static int digitCount(int n) {
         int count=0;
+
         do {
             n /= 10;
             count++;
@@ -13,10 +14,11 @@ public class Q34{
 
     private static int pow(int n, int p) {
         int pw=1;
-        while(p>0) {
+
+        for(int i=1; i<=p; i++) {
             pw *= n;
-            p--;
         }
+        
         return pw;
     }
 
@@ -27,6 +29,7 @@ public class Q34{
         int fd = n / pow(10, dc-1);
         int sumFdLd = fd+ld;
 
+        //removing first and last digit
         int midNum = n % pow(10, dc-1);
         midNum = midNum/10;
 
@@ -36,18 +39,22 @@ public class Q34{
             midNum /= 10;
             sumMid += r; 
         }
+
         return sumMid == sumFdLd;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
         sc.close();
 
-        if(isXylem(n))
+        if(isXylem(n)) {
             System.out.println("Xylem");
-        else 
+        }
+        else {
             System.out.println("Phloem");
+        }
     }
 }

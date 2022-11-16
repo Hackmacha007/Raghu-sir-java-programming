@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q35 {
+public class Q35_Sqroot {
     private static double sqroot(int num) {
         double t;
         double sqrt = num/2;
@@ -15,6 +15,7 @@ public class Q35 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
         sc.close();

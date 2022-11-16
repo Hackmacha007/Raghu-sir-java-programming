@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Q22 {
+public class Q22_Palindrome {
     private static boolean isPalindrome(int n) {
-        int rev = 0, temp=n;
+        int rev=0, temp=n;
 
         do {
             int ld = n%10;
@@ -15,13 +15,16 @@ public class Q22 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
         sc.close();
         
-        if(isPalindrome(num))
+        if(isPalindrome(num)) {
             System.out.println("Palindrome");
-        else
+        }
+        else {
             System.out.println("Not Palindrome");
+        }
     }
 }

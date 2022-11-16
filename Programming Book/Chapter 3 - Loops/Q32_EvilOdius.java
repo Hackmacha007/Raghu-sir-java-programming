@@ -1,24 +1,34 @@
 import java.util.Scanner;
 
-public class Q42 {
+public class Q32_EvilOdius {
     private static String binary(int n) {
         String bin="";
+
         while(n!=0) {
             int b = n%2;
             bin = b + bin;
             n/=2;
         }
+
         return bin;
     }
 
-    private static int settedDigits(int n) {
+    private static boolean evilOrOdius(int n) {
         String bin = binary(n);
         int count = 0;
 
-        for(int i=0; i<bin.length(); i++)
-            if(bin.charAt(i)=='1')
+        for(int i=0; i<bin.length(); i++) {
+            if(bin.charAt(i) == '1') {
                 count++;
-        return count;
+            }
+        }
+
+        if(count%2 == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {
@@ -27,6 +37,11 @@ public class Q42 {
         int n = sc.nextInt();
         sc.close();
 
-        System.out.println(settedDigits(n));
+        if (evilOrOdius(n)) {
+            System.out.println("Evil Number");
+        }
+        else {
+            System.out.println("Odius Number");
+        }
     }
 }

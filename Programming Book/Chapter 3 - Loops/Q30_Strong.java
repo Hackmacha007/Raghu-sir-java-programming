@@ -1,17 +1,19 @@
 import java.util.Scanner;
 
-public class Q30 {
+public class Q30_Strong {
     private static int fact(int n) {
         int fact = 1;
-        while(n>1) {
-            fact = fact * n;
-            n--;
+
+        for(int i=1; i<=n; i++) {
+            fact *= i;
         }
+
         return fact;
     }
 
     private static boolean isStrong(int n) {
         int sum=0, temp=n;
+
         do {
             int r = n%10;
             sum = sum + fact(r);
@@ -23,13 +25,16 @@ public class Q30 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
         sc.close();
 
-        if(isStrong(n))
+        if(isStrong(n)) {
             System.out.println("Strong number");
-        else
+        }
+        else {
             System.out.println("Not strong number");
+        }
     }
 }

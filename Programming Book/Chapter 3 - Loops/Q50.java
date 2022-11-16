@@ -10,12 +10,15 @@ public class Q50 {
         System.out.print("Enter height: ");
         h = sc.nextInt();
 
-        if (b <= 0 || h <= 0)
+        if (b<=0 || h<=0) {
             System.out.println("Error");
-        else 
+        }
+        else {
             System.out.println("Area: " + (b * h));
+        }
     }
 
-    public static void main(String[] args) { 
+    public static void main(String[] args) {
+        //solved the problem using static block
     }
 }

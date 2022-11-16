@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Q43 {
+public class Q43_Disarium {
     private static int digitCount(int n) {
         int count = 0;
+
         do {
             n /= 10;
             count++;
@@ -13,10 +14,11 @@ public class Q43 {
 
     private static int pow(int n, int p) {
         int pw=1;
-        while(p>0) {
+
+        for(int i=1; i<=p; i++) {
             pw *= n;
-            p--;
         }
+
         return pw;
     }
 
@@ -31,18 +33,21 @@ public class Q43 {
             dc--;
         } while(n!=0);
 
-        return temp == sum;        
+        return temp == sum; 
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
         sc.close();
 
-        if(isDisarium(n))
+        if(isDisarium(n)) {
             System.out.println("Disarium number");
-        else
+        }
+        else {
             System.out.println("Not a Disarium number");
+        }
     }
 }

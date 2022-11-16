@@ -9,7 +9,7 @@ class StudentQ47 {
 
     @Override
     public String toString() {
-        return name+" "+id+" "+stream;
+        return name +" "+ id +" "+ stream;
     }
 
     public static void main(String[] args) {

@@ -1,48 +1,47 @@
 import java.util.Scanner;
 
-public class Q24 {
+public class Q28_Automorphic {
     private static int digitCount(int n) {
-        int count = 0;
+        int count=0;
+
         do {
             n /= 10;
             count++;
-        } while(n != 0);
+        } while(n!=0);
 
         return count;
     }
 
     private static int pow(int n, int p) {
         int pw=1;
-        while(p>0) {
+
+        for(int i=1; i<=p; i++) {
             pw *= n;
-            p--;
         }
+
         return pw;
     }
 
-    private static boolean isArmstrong(int n) {
-        int sum=0, temp = n;
+    private static boolean isAutomorphic(int n) {
         int dc = digitCount(n);
+        int numSq = n*n;
+        int lastDigits = numSq % pow(10, dc);
 
-        do {
-            int r = n % 10;
-            sum += pow(r, dc);
-            n /= 10;
-        }while(n!=0);
-
-        return temp == sum;     
+        return lastDigits == n;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
         sc.close();
 
-        if(isArmstrong(n)) {
-            System.out.println("Armstrong number");
-        } else {
-            System.out.println("Not an Armstrong number");
+        if(isAutomorphic(n)) {
+            System.out.println(n + " is Automorphic");
+        }
+        else {
+            System.out.println(n + " is not Automorphic");
         }
     }
 }

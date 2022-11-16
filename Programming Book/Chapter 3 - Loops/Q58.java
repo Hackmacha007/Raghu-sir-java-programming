@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Q58 {
     private static double pow(double n, int p) {
         double pw=1;
-        while(p>0) {
+
+        for(int i=1; i<=p; i++) {
             pw *= n;
-            p--;
         }
+
         return pw;
     }
 
@@ -17,10 +18,13 @@ public class Q58 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the Present Value: ");
         double pv = sc.nextDouble();
+
         System.out.print("Enter the Interest Percentage: ");
         double i = sc.nextDouble();
+        
         System.out.print("Enter the Number of period in Years: ");
         int n = sc.nextInt();
         sc.close();

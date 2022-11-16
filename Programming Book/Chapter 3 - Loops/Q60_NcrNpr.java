@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-public class Q60 {
+public class Q60_NcrNpr {
     private static int fact(int n) {
         int fact = 1;
-        while(n>1) {
-            fact = fact * n;
-            n--;
+
+        for(int i=1; i<=n; i++) {
+            fact *= i;
         }
+        
         return fact;
     }
 
@@ -20,6 +21,7 @@ public class Q60 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Enter the value of N and R: ");
         int n = sc.nextInt();
         int r = sc.nextInt();

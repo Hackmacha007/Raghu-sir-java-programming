@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q27 {
+public class Q27_ConToWord {
     private static String numToWords(int n) {
         switch(n) {
             case 0: return "Zero";
@@ -30,6 +30,7 @@ public class Q27 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Enter the number: ");
         int n = sc.nextInt();
         sc.close();
